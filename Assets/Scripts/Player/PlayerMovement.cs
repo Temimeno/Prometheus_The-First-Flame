@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
@@ -11,6 +12,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     GameOver gameOver;
 
+    
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+    private float jumpingPower = 24f;
+    
+    
+
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -18,6 +26,16 @@ public class PlayerMovement : MonoBehaviour
         Flip();
 
         animator.SetFloat("Horizontal", horizontal);
+
+        if (Input.GetButtonDown("Jump") && IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
     }
 
     private void FixedUpdate()
@@ -34,6 +52,11 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     private void OnTriggerEnter2D(Collider2D collider2D)
