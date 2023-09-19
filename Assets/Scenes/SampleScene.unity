@@ -1335,6 +1335,10 @@ MonoBehaviour:
   animator: {fileID: 1441978844}
   moveSpeed: 8
   rb: {fileID: 1441978840}
+  groundCheck: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &1441978840
 Rigidbody2D:
   serializedVersion: 4
@@ -1463,9 +1467,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.008155286, y: 0.005590439}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.31, y: 0.77, z: 1.04, w: 1.61}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.422, y: 2.694}
+    oldSize: {x: 14, y: 14}
     newSize: {x: 7.11, y: 13.47}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
