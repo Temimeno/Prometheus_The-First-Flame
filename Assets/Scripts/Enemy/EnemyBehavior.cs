@@ -22,6 +22,7 @@ public class EnemyBehavior : MonoBehaviour
 
     void Awake()
     {
+        anim = GetComponent<Animator>();
         inTimer = timer;
     }
 
@@ -44,6 +45,7 @@ public class EnemyBehavior : MonoBehaviour
 
         if(inRange == false)
         {
+            anim.SetBool("Walk", false);
             StopAttack();
         }
     }
@@ -80,7 +82,8 @@ public class EnemyBehavior : MonoBehaviour
 
     void Move()
     {
-        anim.Setbool("Walk", true);
+        anim.SetBool("Walk", true);
+        
         Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
     }
