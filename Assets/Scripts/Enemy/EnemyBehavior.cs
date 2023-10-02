@@ -94,7 +94,7 @@ public class EnemyBehavior : MonoBehaviour
         attackMode = true;
 
         anim.SetBool("Walk", false);
-        //anim.SetBool("Attack",true) 
+        anim.SetBool("Attack",true); 
     }
 
     void StopAttack()
@@ -120,10 +120,12 @@ public class EnemyBehavior : MonoBehaviour
         if(distance > attackDistance)
         {
             Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.red);
+            
         }
         else if(attackDistance > distance)
         {
             Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
+            
         }
     }
 

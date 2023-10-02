@@ -1,11 +1,12 @@
 using System.Collections;
+using System.Collections.Generic; // Add this line
 using UnityEngine;
 
 public class PlayerOneWayPlatform : MonoBehaviour
 {
     private GameObject currentOneWayPlatform;
 
-    [SerializeField] private BoxCollider2D playerCollider;
+    public List<BoxCollider2D> playerCollider = new List<BoxCollider2D>();
 
     private void Update()
     {
@@ -39,8 +40,17 @@ public class PlayerOneWayPlatform : MonoBehaviour
     {
         BoxCollider2D platformCollider = currentOneWayPlatform.GetComponent<BoxCollider2D>();
 
-        Physics2D.IgnoreCollision(playerCollider, platformCollider);
+        foreach (BoxCollider2D playerColliderElement in playerCollider)
+        {
+            Physics2D.IgnoreCollision(playerColliderElement, platformCollider);
+        }
+
         yield return new WaitForSeconds(0.5f);
-        Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
+
+        foreach (BoxCollider2D playerColliderElement in playerCollider)
+        {
+            Physics2D.IgnoreCollision(playerColliderElement, platformCollider, false);
+        }
     }
+
 }
