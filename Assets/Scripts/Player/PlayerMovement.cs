@@ -93,12 +93,12 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    /*private void OnTriggerEnter2D(Collider2D collider2D)
     {
         Debug.Log("Let the fisrt flame rise");
         gameOver = FindObjectOfType<GameOver>();
         gameOver.GameEnd();
-    }
+    }*/
 
     private IEnumerator Dash()
     {
