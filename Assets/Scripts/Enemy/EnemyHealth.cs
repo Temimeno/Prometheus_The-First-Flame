@@ -5,15 +5,15 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    public int Hp;
-    public int MaxHp = 100;
+    public float Hp;
+    public float MaxHp = 100;
 
     void Start()
     {
         Hp = MaxHp;
     }
     
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         Hp -= damage;
         if(Hp <= 0)
