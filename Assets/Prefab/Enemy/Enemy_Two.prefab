@@ -96,7 +96,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6528495281630870604}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   Bullet: {fileID: 8997236293696685410, guid: 6dbaddedcb80a9049a7e68c6c6301290, type: 3}
   SpawnBullet: {fileID: 8773787457875795892}
   time: 0
-  timeSpawn: 5
+  timeSpawn: 3
 --- !u!1 &6877971724218154117
 GameObject:
   m_ObjectHideFlags: 0
