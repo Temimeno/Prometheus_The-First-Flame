@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    GameOver gameOver;
     public Animator animator;
 
     // Walk
