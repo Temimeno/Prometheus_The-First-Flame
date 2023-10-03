@@ -6,6 +6,7 @@ TagManager:
   tags:
   - OneWayPlatform
   - EnemyHealth
+  - PlayerHealth
   layers:
   - Default
   - TransparentFX
