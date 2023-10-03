@@ -8,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
 
     public Transform attackPoint;
+    public int attackDamage = 10;
     public float attackRange = 0.5f;
     public float attackTriggerDelay = 0.2f;
     public float attackRate = 2f;
@@ -32,7 +33,7 @@ public class PlayerCombat : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log("You hit " + enemy.name);
+            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
         }
     }
 
