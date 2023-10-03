@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6479148694545507140}
   - component: {fileID: 7645631468557967979}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: triggerArea
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -85,21 +85,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:Assets/Prefab/Enemy.prefab
-  - component: {fileID: 7292598913288222601}
-  - component: {fileID: 6273208318361131585}
-  - component: {fileID: 5198785066058543115}
-  - component: {fileID: 460790239431556631}
-  - component: {fileID: 8021054166975848845}
-  m_Layer: 7
-========
   - component: {fileID: 1790920384522199634}
   - component: {fileID: 3531843629348989213}
   - component: {fileID: 5512704865264031022}
   - component: {fileID: 2415748689181600206}
   - component: {fileID: 8211169631549574259}
-  m_Layer: 0
->>>>>>>> 7f42a1fe2a21ddb409188de269d7cca0e909bb00:Assets/Prefab/Enemy/Enemy.prefab
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,8 +178,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 1.9558063
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -256,8 +247,8 @@ GameObject:
   - component: {fileID: 6930820412733230324}
   - component: {fileID: 3764660551376770998}
   - component: {fileID: 591546956706446722}
-  m_Layer: 0
-  m_Name: Enemy_Colider
+  m_Layer: 7
+  m_Name: EnemyHitBox
   m_TagString: EnemyHealth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,8 +361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57d384f205c9774bb7ca6d2b667d23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 6032507140954470147}
   Hp: 0
-  MaxHp: 100
+  MaxHp: 30
 --- !u!1 &8894154145889924664
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3754052484715220810}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Raycast
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}

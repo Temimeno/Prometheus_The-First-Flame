@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [SerializeField] GameObject enemyPrefab;
     public int Hp;
     public int MaxHp = 100;
 
@@ -17,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
         Hp -= damage;
         if(Hp <= 0)
         {
-            Destroy(gameObject);
+            Destroy(enemyPrefab);
         }
     }
 }

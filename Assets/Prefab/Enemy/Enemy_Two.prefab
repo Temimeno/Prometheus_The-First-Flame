@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2613997437870922121}
   - component: {fileID: 2627562786073234544}
   - component: {fileID: 3097381416296857787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_Two
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,8 +142,8 @@ GameObject:
   - component: {fileID: 6871919241889265132}
   - component: {fileID: 9077631542039077604}
   - component: {fileID: 2227894628476114878}
-  m_Layer: 0
-  m_Name: Enemy_Two_Colider
+  m_Layer: 8
+  m_Name: Enemy_TwoHitBox
   m_TagString: EnemyHealth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,8 +221,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57d384f205c9774bb7ca6d2b667d23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 6528495281630870604}
   Hp: 0
-  MaxHp: 100
+  MaxHp: 50
 --- !u!1 &8773787457875795892
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3850156813451873458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnBullet
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

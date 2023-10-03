@@ -94,7 +94,7 @@ public class EnemyBehavior : MonoBehaviour
         attackMode = true;
 
         anim.SetBool("Walk", false);
-        anim.SetBool("Attack",true); 
+        // anim.SetBool("Attack",true); 
     }
 
     void StopAttack()

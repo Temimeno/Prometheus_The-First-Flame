@@ -24,8 +24,9 @@ public class Bullet : MonoBehaviour
         if(col.tag == "PlayerHealth")
         {
             col.gameObject.GetComponent<PlayerHealth>().TakeDamage(Damage);
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
+        if(col.tag == "BulletBlock")
+            Destroy(gameObject);
     }
 }
