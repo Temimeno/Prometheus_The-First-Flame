@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Jump
     private float jumpingPower = 21f;
     bool isGrounded;
+    public float yVelocity;
 
     // Dash
     private bool canDash = true;
@@ -37,11 +38,13 @@ public class PlayerMovement : MonoBehaviour
 
         Flip();
 
+        yVelocity = rb.velocity.y;
         isGrounded = Grounded();
 
         animator.SetFloat("Horizontal", horizontal);
         animator.SetBool("isDashing", isDashing);
         animator.SetBool("isGrounded", isGrounded);
+        animator.SetFloat("yVelocity", yVelocity);
 
         if (isDashing == true)
         {
