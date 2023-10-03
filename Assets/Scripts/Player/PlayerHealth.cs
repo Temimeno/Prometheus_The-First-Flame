@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int MaxHealth = 100;
+    public GameObject player;
+    YouDied youDied;
+    public int MaxHealth = 50;
     public int CurrentHealth;
+    public bool isDeath = false;
 
     void Start()
     {
@@ -17,7 +20,8 @@ public class PlayerHealth : MonoBehaviour
         CurrentHealth -= Damage;
         if(CurrentHealth <= 0)
         {
-            Destroy(gameObject);
+            Destroy(player);
+            isDeath = true;
         }
     }
 }
