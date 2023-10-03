@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - OneWayPlatform
+  - EnemyHealth
   layers:
   - Default
   - TransparentFX
