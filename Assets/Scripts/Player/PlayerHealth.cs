@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public GameObject player;
     YouDied youDied;
-    public int MaxHealth = 50;
-    public int CurrentHealth;
+    public Image healthBar;
+    public GameObject player;
+
+    public float MaxHealth = 50;
+    public float CurrentHealth;
     public bool isDeath = false;
 
     void Start()
@@ -15,9 +18,10 @@ public class PlayerHealth : MonoBehaviour
         CurrentHealth = MaxHealth;
     }
 
-    public void TakeDamage(int Damage)
+    public void TakeDamage(float Damage)
     {
         CurrentHealth -= Damage;
+        healthBar.fillAmount = CurrentHealth / MaxHealth;
         if(CurrentHealth <= 0)
         {
             Destroy(player);
