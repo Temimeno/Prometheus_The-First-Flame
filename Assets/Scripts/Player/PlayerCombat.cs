@@ -10,7 +10,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public float attackTriggerDelay = 0.2f;
-    public float attackRate = 1.5f;
+    public float attackRate = 2f;
     float nextAttackTime = 0f;
     void Update()
     {

@@ -768,7 +768,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1145862160}
   attackRange: 0.6
   attackTriggerDelay: 0.08
-  attackRate: 2
+  attackRate: 2.5
 --- !u!1 &276308671
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,13 +4005,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 368811336}
     m_Modifications:
+    - target: {fileID: 1267327450953817811, guid: 042c36618bad7c347b6ad73b11241772, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118851629062151525, guid: 042c36618bad7c347b6ad73b11241772, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4395840085978251523, guid: 042c36618bad7c347b6ad73b11241772, type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6123338391922443037, guid: 042c36618bad7c347b6ad73b11241772, type: 3}
+      propertyPath: m_Name
+      value: EnemyHitBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123338391922443037, guid: 042c36618bad7c347b6ad73b11241772, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7292598913288222601, guid: 042c36618bad7c347b6ad73b11241772, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -25.26
+      value: -71.05
       objectReference: {fileID: 0}
     - target: {fileID: 7292598913288222601, guid: 042c36618bad7c347b6ad73b11241772, type: 3}
       propertyPath: m_LocalPosition.y
