@@ -130,7 +130,7 @@ MonoBehaviour:
   Bullet: {fileID: 5496347657764075894, guid: 5fdc906eb116199488d2aa05600512a5, type: 3}
   SpawnBullet: {fileID: 4301621737943151992}
   time: 0
-  timeSpawn: 3
+  timeSpawn: 6
   spriteRenderer: {fileID: 9011204980451785036}
   ShootBlaster: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &4301621737943151992
