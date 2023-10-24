@@ -24,10 +24,18 @@ public class PlayerMovement : MonoBehaviour
     private float dashingTime = 0.2f;
     private float dashingCooldown = 0.5f;
 
+    // Camera
+    private float _fallSpeedYDampingChangeThreshold;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer trailRenderer;
+
+    private void Start()
+    {
+        _fallSpeedYDampingChangeThreshold = CameraManager.instance._fallSpeedYDampingChangeThreshold;
+    }
 
     void Update()
     {
@@ -61,6 +69,25 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash == true)
         {
             StartCoroutine(Dash());
+        }
+
+        //If we are falling past a certain speed threshold
+        if (rb.velocity.y < _fallSpeedYDampingChangeThreshold &&
+            !CameraManager.instance.IsLerpingYDamping &&
+            !CameraManager.instance.LerpingFromPlayerFalling)
+        {
+            CameraManager.instance.LerpYDamping(true);
+        }
+
+        //If we are standing still or moving up
+        if (rb.velocity.y >= 0f &&
+            !CameraManager.instance.IsLerpingYDamping &&
+            CameraManager.instance.LerpingFromPlayerFalling)
+        {
+            //Reser so it can be called again
+            CameraManager.instance.LerpingFromPlayerFalling = false;
+
+            CameraManager.instance.LerpYDamping(false);
         }
     }
 
