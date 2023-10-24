@@ -1593,7 +1593,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1145862160}
   attackDamage: 10
   attackRange: 0.6
-  attackTriggerDelay: 0.08
+  attackTriggerDelay: 0.2
   attackRate: 2.5
 --- !u!1 &276308671
 GameObject:
