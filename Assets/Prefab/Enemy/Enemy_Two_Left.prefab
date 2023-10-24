@@ -131,6 +131,8 @@ MonoBehaviour:
   SpawnBullet: {fileID: 4301621737943151992}
   time: 0
   timeSpawn: 3
+  spriteRenderer: {fileID: 9011204980451785036}
+  ShootBlaster: {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &4301621737943151992
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,3 +257,5 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1182501716823825297}
   Hp: 0
   MaxHp: 50
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  spriteRenderer: {fileID: 9011204980451785036}

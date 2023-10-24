@@ -9,13 +9,19 @@ public class EnemyBullet : MonoBehaviour
     
     public float time;
     public float timeSpawn;
+    public SpriteRenderer spriteRenderer;
+    public Color ShootBlaster = Color.blue;
 
     void Update()
     {
         time += Time.deltaTime;
-        if(time > timeSpawn)
+        if(time >= 3)
         {
-            Shoot();
+            StartCoroutine(ChangneColorBlaster());
+            if(time > timeSpawn)
+            {
+                Shoot();
+            }
         }
     }
 
@@ -24,5 +30,13 @@ public class EnemyBullet : MonoBehaviour
     {
         time = 0;
         Instantiate(Bullet, SpawnBullet.transform.position, Quaternion.identity);
+    }
+
+    IEnumerator ChangneColorBlaster()
+    {
+        Color originalColor = Color.white;
+        spriteRenderer.color = ShootBlaster;
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = originalColor;
     }
 }
