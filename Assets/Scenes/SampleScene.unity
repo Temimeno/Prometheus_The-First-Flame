@@ -733,7 +733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &130254613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10930,6 +10930,8 @@ MonoBehaviour:
   MaxHealth: 50
   CurrentHealth: 0
   isDeath: 0
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  sr: {fileID: 250048564}
 --- !u!61 &2115695556
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Grounded();
 
         animator.SetFloat("Horizontal", horizontal);
+        animator.SetFloat("Vertical", rb.velocity.y);
         animator.SetBool("isDashing", isDashing);
         animator.SetBool("isGrounded", isGrounded);
 
