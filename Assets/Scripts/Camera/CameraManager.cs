@@ -51,7 +51,7 @@ public class CameraManager : MonoBehaviour
 
     public void LerpYDamping(bool isPlayerFalling)
     {
-
+        _lerpYPanCoroutine = StartCoroutine(LerpYAction(isPlayerFalling));
     }
 
     private IEnumerator LerpYAction(bool isPLayerFalling)
