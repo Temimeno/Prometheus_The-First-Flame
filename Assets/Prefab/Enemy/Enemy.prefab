@@ -302,10 +302,10 @@ MonoBehaviour:
   raycastMesk:
     serializedVersion: 2
     m_Bits: 64
-  rayCastLength: 4
-  attackDistance: 2
-  moveSpeed: 2
-  timer: 3
+  rayCastLength: 5
+  attackDistance: 1.5
+  moveSpeed: 3
+  timer: 1
 --- !u!95 &8211169631549574259
 Animator:
   serializedVersion: 5

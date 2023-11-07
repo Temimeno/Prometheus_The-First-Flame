@@ -13,13 +13,21 @@ public class PlayerHealth : MonoBehaviour
     public float CurrentHealth;
     public bool isDeath = false;
 
+    bool isHit = false;
+    [SerializeField] Color damageColor = Color.red;
+    public SpriteRenderer sr;
+    Color defaultColor;
+
     void Start()
     {
         CurrentHealth = MaxHealth;
+        defaultColor = sr.color;
     }
 
     public void TakeDamage(float Damage)
     {
+        isHit = true;
+        StartCoroutine("SwitchColor");
         CurrentHealth -= Damage;
         healthBar.fillAmount = CurrentHealth / MaxHealth;
         if(CurrentHealth <= 0)
@@ -27,5 +35,13 @@ public class PlayerHealth : MonoBehaviour
             Destroy(player);
             isDeath = true;
         }
+    }
+
+    IEnumerator SwitchColor()
+    {
+        sr.color = damageColor;
+        yield return new WaitForSeconds(0.2f);
+        sr.color = defaultColor;
+        isHit = false;
     }
 }

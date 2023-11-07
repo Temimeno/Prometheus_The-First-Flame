@@ -15,7 +15,7 @@ public class EnemyBullet : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(time >= 3)
+        if(time >= 5.5f)
         {
             StartCoroutine(ChangneColorBlaster());
             if(time > timeSpawn)
@@ -36,7 +36,7 @@ public class EnemyBullet : MonoBehaviour
     {
         Color originalColor = Color.white;
         spriteRenderer.color = ShootBlaster;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.5f);
         spriteRenderer.color = originalColor;
     }
 }
