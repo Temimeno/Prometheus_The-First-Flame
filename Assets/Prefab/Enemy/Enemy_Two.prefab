@@ -130,9 +130,11 @@ MonoBehaviour:
   Bullet: {fileID: 8997236293696685410, guid: 6dbaddedcb80a9049a7e68c6c6301290, type: 3}
   SpawnBullet: {fileID: 8773787457875795892}
   time: 0
-  timeSpawn: 6
+  timeSpawn: 5
   spriteRenderer: {fileID: 2613997437870922121}
   ShootBlaster: {r: 0, g: 0, b: 1, a: 1}
+  timeForColorToAppear: 4.5
+  colorDelayTime: 0.5
 --- !u!1 &6877971724218154117
 GameObject:
   m_ObjectHideFlags: 0
