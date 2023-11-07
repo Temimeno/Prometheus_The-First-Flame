@@ -101,6 +101,7 @@ public class EnemyBehavior : MonoBehaviour
         cooling = false;
         attackMode = false;
         anim.SetBool("Attack", false);
+        
     }
 
     void Cooldown()
