@@ -27,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
     // Camera
     private float _fallSpeedYDampingChangeThreshold;
 
+    // Scene Transition
+    public VectorValue startingPosition;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -35,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _fallSpeedYDampingChangeThreshold = CameraManager.instance._fallSpeedYDampingChangeThreshold;
+        transform.position = startingPosition.intialValue;
     }
 
     void Update()

@@ -10,6 +10,7 @@ TagManager:
   - BulletBlock
   - Goal
   - Interact
+  - GM
   layers:
   - Default
   - TransparentFX
