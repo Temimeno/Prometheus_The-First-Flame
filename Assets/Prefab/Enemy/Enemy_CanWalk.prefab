@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5623908658660298410}
   - component: {fileID: 2946012613377352856}
-  - component: {fileID: 2270699495262799600}
+  - component: {fileID: 4954086608528013252}
   m_Layer: 7
   m_Name: WeaponHitbox
   m_TagString: Untagged
@@ -78,7 +78,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2270699495262799600
+--- !u!114 &4954086608528013252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,14 +102,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1826981014088145317}
   - component: {fileID: 6480528940694985855}
-  - component: {fileID: 4191294068221698470}
+  - component: {fileID: 7973109895587719692}
   m_Layer: 0
   m_Name: Hotzone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1826981014088145317
 Transform:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.065566, y: 0.8219543}
   m_EdgeRadius: 0
---- !u!114 &4191294068221698470
+--- !u!114 &7973109895587719692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6479148694545507140}
   - component: {fileID: 7645631468557967979}
-  - component: {fileID: 5965263032021364218}
+  - component: {fileID: 2445346957452819590}
   m_Layer: 7
   m_Name: triggerArea
   m_TagString: Untagged
@@ -260,7 +260,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.761575, y: 1.5892102}
   m_EdgeRadius: 0
---- !u!114 &5965263032021364218
+--- !u!114 &2445346957452819590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,8 +283,8 @@ GameObject:
   - component: {fileID: 1790920384522199634}
   - component: {fileID: 3531843629348989213}
   - component: {fileID: 5512704865264031022}
-  - component: {fileID: 2415748689181600206}
   - component: {fileID: 8211169631549574259}
+  - component: {fileID: 268861377520924814}
   m_Layer: 7
   m_Name: Enemy_CanWalk
   m_TagString: Untagged
@@ -391,27 +391,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2415748689181600206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6032507140954470147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecbf3028bee8858499ed0612e35388d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDistance: 1.5
-  moveSpeed: 5
-  timer: 3
-  LeftLimit: {fileID: 0}
-  RightLimit: {fileID: 0}
-  target: {fileID: 0}
-  inRange: 0
-  hotZone: {fileID: 2885513374983936427}
-  triggerArea: {fileID: 5316571243284065921}
 --- !u!95 &8211169631549574259
 Animator:
   serializedVersion: 5
@@ -433,6 +412,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &268861377520924814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032507140954470147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecbf3028bee8858499ed0612e35388d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDistance: 2
+  moveSpeed: 3
+  timer: 2
+  LeftLimit: {fileID: 0}
+  RightLimit: {fileID: 0}
+  target: {fileID: 0}
+  inRange: 0
+  hotZone: {fileID: 2885513374983936427}
+  triggerArea: {fileID: 5316571243284065921}
 --- !u!1 &7268131846958417060
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 8704984088873895126}
   - component: {fileID: 6930820412733230324}
   - component: {fileID: 3764660551376770998}
-  - component: {fileID: 591546956706446722}
+  - component: {fileID: 4613039305911765954}
   m_Layer: 7
   m_Name: EnemyHitBox
   m_TagString: EnemyHealth
@@ -547,7 +547,7 @@ CircleCollider2D:
   m_Offset: {x: -0.09, y: -0.87}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &591546956706446722
+--- !u!114 &4613039305911765954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -559,11 +559,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57d384f205c9774bb7ca6d2b667d23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6032507140954470147}
+  enemyPrefab: {fileID: 0}
   Hp: 0
-  MaxHp: 30
+  MaxHp: 100
   damageColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 3531843629348989213}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &8894154145889924664
 GameObject:
   m_ObjectHideFlags: 0
