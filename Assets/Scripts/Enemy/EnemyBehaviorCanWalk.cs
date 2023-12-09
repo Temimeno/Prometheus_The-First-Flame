@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBehavior : MonoBehaviour
+public class EnemyBehaviorCanWalk : MonoBehaviour
 {
-    public Transform rayCast;
-    public LayerMask raycastMesk;
-    public float rayCastLength;
+    
+    
     public float attackDistance;
     public float moveSpeed;
     public float timer;
     public Transform LeftLimit;
     public Transform RightLimit;
+    [HideInInspector] public Transform target;
+    [HideInInspector] public bool inRange;
+    public GameObject hotZone;
+    public GameObject triggerArea;
 
-    private Transform target;
-    private RaycastHit2D hit;
     private Animator anim;
     private float distance;
     private bool attackMode;
-    private bool inRange;
     private bool cooling;
     private float inTimer;
 
@@ -41,33 +41,8 @@ public class EnemyBehavior : MonoBehaviour
         }
         if(inRange)
         {
-            hit = Physics2D.Raycast(rayCast.position, -transform.right, rayCastLength, raycastMesk);
-            RaycastDebugger();
-        }
-
-        if(hit.collider != null)
-        {
-            EnemyLogic();
-        }
-        else if(hit.collider == null)
-        {
-            inRange = false;
-        }
-
-        if(inRange == false)
-        {
             
-            StopAttack();
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if(col.gameObject.tag == "Player")
-        {
-            target = col.transform;
-            inRange = true;
-            Flip();
+            EnemyLogic();
         }
     }
 
@@ -131,21 +106,6 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-
-    void RaycastDebugger()
-    {
-        if(distance > attackDistance)
-        {
-            Debug.DrawRay(rayCast.position, -transform.right * rayCastLength, Color.red);
-            
-        }
-        else if(attackDistance > distance)
-        {
-            Debug.DrawRay(rayCast.position, -transform.right * rayCastLength, Color.green);
-            Debug.Log("Player");
-        }
-    }
-
     public void TriggerCooling()
     {
         cooling = true;
@@ -156,7 +116,7 @@ public class EnemyBehavior : MonoBehaviour
         return transform.position.x > LeftLimit.position.x && transform.position.x < RightLimit.position.x;
     }
 
-    private void SelectTarget()
+    public void SelectTarget()
     {
         float distanceToLeft = Vector3.Distance(transform.position, LeftLimit.position);
         float distanceToRight = Vector3.Distance(transform.position, RightLimit.position);
@@ -173,7 +133,7 @@ public class EnemyBehavior : MonoBehaviour
         Flip();
     }
 
-    void Flip()
+    public void Flip()
     {
         Vector3 rotation = transform.eulerAngles;
         if (transform.position.x > target.position.x) 
