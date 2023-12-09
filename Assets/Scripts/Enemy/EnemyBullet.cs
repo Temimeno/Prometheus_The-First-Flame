@@ -12,10 +12,14 @@ public class EnemyBullet : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Color ShootBlaster = Color.blue;
 
+    [Header("timeForColorToAppear + colorDelayTime = timeSpawn")]
+    public float timeForColorToAppear = 4.5f;
+    public float colorDelayTime = 0.5f;
+
     void Update()
     {
         time += Time.deltaTime;
-        if(time >= 5.5f)
+        if(time >= timeForColorToAppear)
         {
             StartCoroutine(ChangneColorBlaster());
             if(time > timeSpawn)
@@ -36,7 +40,7 @@ public class EnemyBullet : MonoBehaviour
     {
         Color originalColor = Color.white;
         spriteRenderer.color = ShootBlaster;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(colorDelayTime);
         spriteRenderer.color = originalColor;
     }
 }

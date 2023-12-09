@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1182501716823825297}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -57.15, y: -1.42, z: 0}
   m_LocalScale: {x: 1.0379, y: 3.06425, z: 1}
   m_ConstrainProportionsScale: 0
@@ -130,9 +130,11 @@ MonoBehaviour:
   Bullet: {fileID: 5496347657764075894, guid: 5fdc906eb116199488d2aa05600512a5, type: 3}
   SpawnBullet: {fileID: 4301621737943151992}
   time: 0
-  timeSpawn: 6
+  timeSpawn: 5
   spriteRenderer: {fileID: 9011204980451785036}
   ShootBlaster: {r: 0, g: 0, b: 1, a: 1}
+  timeForColorToAppear: 4.5
+  colorDelayTime: 0.5
 --- !u!1 &4301621737943151992
 GameObject:
   m_ObjectHideFlags: 0

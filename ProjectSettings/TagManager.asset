@@ -10,7 +10,7 @@ TagManager:
   - BulletBlock
   - Goal
   - Interact
-  - BossHealth
+  - GM
   layers:
   - Default
   - TransparentFX
