@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 5222351033387551320}
   - component: {fileID: 6761433894729315408}
   - component: {fileID: 4573822106144280581}
+  - component: {fileID: 6342074124004130302}
   - component: {fileID: 1742403230351275808}
   - component: {fileID: 6111023439313078996}
   m_Layer: 6
@@ -63,7 +64,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4488036989424134371}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 39.1, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -211,6 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1742403230351275808}
   moveSpeed: 8
+  startingPosition: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
   rb: {fileID: 5061862415345301233}
   groundCheck: {fileID: 899376463764258897}
   groundLayer:
@@ -253,6 +255,20 @@ MonoBehaviour:
   playerCollider:
   - {fileID: 5813590553261130811}
   - {fileID: 5766895401018250792}
+--- !u!114 &6342074124004130302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4488036989424134371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fe281d6567f37448f14a4b1f130461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 5d5cafa29df800649825710a8b15be3b, type: 2}
+  souls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
 --- !u!95 &1742403230351275808
 Animator:
   serializedVersion: 5

@@ -7042,6 +7042,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8825323463863969332, guid: 18cdcee5ded09c44b8d449ae8bf31537, type: 3}
+      propertyPath: m_SurfaceArc
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7506,14 +7510,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5222351033387551320, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
-      propertyPath: initialPosition
-      value: 
-      objectReference: {fileID: 11400000, guid: 35769348a00df3443b454d4fe99bdf83, type: 2}
-    - target: {fileID: 5222351033387551320, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
-      propertyPath: startingPosition
-      value: 
-      objectReference: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
     - target: {fileID: 7095409935563790099, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: healthBar
       value: 
