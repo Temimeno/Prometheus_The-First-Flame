@@ -6,6 +6,7 @@ public class PlayerCombat : MonoBehaviour
 {
     public Animator animator;
     public LayerMask enemyLayers;
+    public LayerMask bosslayers;
 
     public Transform attackPoint;
     public float attackDamage = 10;
@@ -30,10 +31,18 @@ public class PlayerCombat : MonoBehaviour
     {
         //Detect enemies and Damaged them
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        
+        Collider2D[] hitboss = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bosslayers);
+
 
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+        }
+
+        foreach (Collider2D boss in hitboss)
+        {
+            boss.GetComponent<BossHealth>().TakeDamage(attackDamage);
         }
     }
 

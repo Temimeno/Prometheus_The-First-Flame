@@ -11,6 +11,7 @@ TagManager:
   - Goal
   - Interact
   - GM
+  - BossHealth
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - EnemyType1
   - EnemyType2
-  - 
+  - Boss
   - 
   - 
   - 

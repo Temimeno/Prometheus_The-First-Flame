@@ -208,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13794560}
   - component: {fileID: 13794561}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 23427763}
   - component: {fileID: 23427764}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1329,6 +1329,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 384
+  bosslayers:
+    serializedVersion: 2
+    m_Bits: 512
   attackPoint: {fileID: 81484825}
   attackDamage: 10
   attackRange: 0.6
@@ -1348,6 +1351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 370532626}
   moveSpeed: 8
+  startingPosition: {fileID: 0}
   rb: {fileID: 370532631}
   groundCheck: {fileID: 233712609}
   groundLayer:
@@ -1689,7 +1693,7 @@ GameObject:
   - component: {fileID: 451129536}
   - component: {fileID: 451129537}
   - component: {fileID: 451129538}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: RightHand
   m_TagString: BossHealth
   m_Icon: {fileID: 0}
@@ -2564,7 +2568,7 @@ GameObject:
   - component: {fileID: 709371582}
   - component: {fileID: 709371583}
   - component: {fileID: 709371584}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Head
   m_TagString: BossHealth
   m_Icon: {fileID: 0}
@@ -3408,7 +3412,7 @@ GameObject:
   - component: {fileID: 942076064}
   - component: {fileID: 942076063}
   - component: {fileID: 942076065}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: boxActive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4072,7 +4076,7 @@ GameObject:
   - component: {fileID: 1199049486}
   - component: {fileID: 1199049487}
   - component: {fileID: 1199049488}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: LeftHand
   m_TagString: BossHealth
   m_Icon: {fileID: 0}
@@ -5184,7 +5188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1767649313}
   - component: {fileID: 1767649312}
-  m_Layer: 3
+  m_Layer: 9
   m_Name: Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
