@@ -41,7 +41,7 @@ public class EnemyBehavior : MonoBehaviour
         }
         if(inRange)
         {
-            hit = Physics2D.Raycast(rayCast.position, Vector2.left, rayCastLength, raycastMesk);
+            hit = Physics2D.Raycast(rayCast.position, -transform.right, rayCastLength, raycastMesk);
             RaycastDebugger();
         }
 
@@ -56,7 +56,7 @@ public class EnemyBehavior : MonoBehaviour
 
         if(inRange == false)
         {
-            anim.SetBool("Walk", false);
+            
             StopAttack();
         }
     }
@@ -73,11 +73,10 @@ public class EnemyBehavior : MonoBehaviour
 
     void EnemyLogic()
     {
-        distance = Vector2.Distance(transform.position, target.transform.position);
+        distance = Vector2.Distance(transform.position, target.position);
 
         if(distance > attackDistance)
         {
-            Move();
             StopAttack();
         }
         else if(attackDistance >= distance && cooling == false)
@@ -88,6 +87,7 @@ public class EnemyBehavior : MonoBehaviour
         if (cooling)
         {
             Cooldown();
+            anim.SetBool("Attack", false);
         }
     }
 
@@ -136,13 +136,13 @@ public class EnemyBehavior : MonoBehaviour
     {
         if(distance > attackDistance)
         {
-            Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.red);
+            Debug.DrawRay(rayCast.position, -transform.right * rayCastLength, Color.red);
             
         }
         else if(attackDistance > distance)
         {
-            Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
-            
+            Debug.DrawRay(rayCast.position, -transform.right * rayCastLength, Color.green);
+            Debug.Log("Player");
         }
     }
 
@@ -178,12 +178,11 @@ public class EnemyBehavior : MonoBehaviour
         Vector3 rotation = transform.eulerAngles;
         if (transform.position.x > target.position.x) 
         {
-            rotation.y = 180;
+            rotation.y = 0;
         }
         else
         {
-            Debug.Log("Twist");
-            rotation.y = 0;
+            rotation.y = 180;
         }
 
 
