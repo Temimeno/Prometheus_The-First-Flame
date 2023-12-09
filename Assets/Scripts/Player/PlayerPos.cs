@@ -11,9 +11,4 @@ public class PlayerPos : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         transform.position = gm.lastCheckpointPos;
     }
-
-    void Update()
-    {
-        
-    }
 }

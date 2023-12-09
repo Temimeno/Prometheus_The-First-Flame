@@ -3,5 +3,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SceneInfo", menuName = "Persistence")]
 public class SceneInfo : ScriptableObject
 {
-    public bool isNextScene = true;
+    public int spawningScene;
+    public Vector3 playerSpawnPosition;
 }
