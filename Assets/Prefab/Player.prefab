@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 5222351033387551320}
   - component: {fileID: 6761433894729315408}
   - component: {fileID: 4573822106144280581}
-  - component: {fileID: 6342074124004130302}
   - component: {fileID: 1742403230351275808}
   - component: {fileID: 6111023439313078996}
   m_Layer: 6
@@ -113,7 +112,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1528385209
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1a4625ba77297864fb9f2247fd3a9cf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -235,6 +234,9 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 384
+  bosslayers:
+    serializedVersion: 2
+    m_Bits: 0
   attackPoint: {fileID: 7417137736265131389}
   attackDamage: 10
   attackRange: 0.6
@@ -255,20 +257,6 @@ MonoBehaviour:
   playerCollider:
   - {fileID: 5813590553261130811}
   - {fileID: 5766895401018250792}
---- !u!114 &6342074124004130302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4488036989424134371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94fe281d6567f37448f14a4b1f130461, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 5d5cafa29df800649825710a8b15be3b, type: 2}
-  souls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
 --- !u!95 &1742403230351275808
 Animator:
   serializedVersion: 5
@@ -330,7 +318,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1528385209
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Time: 0.5
   m_PreviewTimeScale: 1
