@@ -52,11 +52,11 @@ TagManager:
   - name: Background
     uniqueID: 1173220695
     locked: 0
-  - name: Ground
-    uniqueID: 6607037
-    locked: 0
   - name: Boss
     uniqueID: 2928270863
+    locked: 0
+  - name: Ground
+    uniqueID: 6607037
     locked: 0
   - name: Characters
     uniqueID: 1528385209
