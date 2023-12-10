@@ -715,6 +715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03f889a8159dcf43be63c52a202bcac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneInfo: {fileID: 11400000, guid: 4a7a38630ea379a4abfc23782719ea23, type: 2}
+  vectorValue: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
 --- !u!1 &532403652
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +748,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 5d5cafa29df800649825710a8b15be3b, type: 2}
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  sceneInfo: {fileID: 11400000, guid: 4a7a38630ea379a4abfc23782719ea23, type: 2}
+  clearOldScene: {fileID: 11400000, guid: 1d4f8bee27168f644a8cd2e638463cb3, type: 2}
+  vectorValue: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
+  clearOldPosition: {fileID: 11400000, guid: 73a86ad6c658c5b4fba4844e67830360, type: 2}
 --- !u!4 &532403654
 Transform:
   m_ObjectHideFlags: 0

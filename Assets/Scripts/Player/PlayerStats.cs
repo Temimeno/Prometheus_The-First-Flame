@@ -10,11 +10,7 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
-        status.MaxHealth = 0;
-        status.CurrentHealth = 0;
-        status.attackDamage = 0;
-        status.dashingCooldown = 0.8f;
-        status.healQuantity = 3;
+        
     }
 
 

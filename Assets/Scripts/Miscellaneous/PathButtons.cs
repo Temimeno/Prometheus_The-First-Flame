@@ -7,6 +7,10 @@ public class PathButtons : MonoBehaviour
 {
     public Stats stats;
     public Status status;
+    public SceneInfo sceneInfo;
+    public SceneInfo clearOldScene;
+    public VectorValue vectorValue;
+    public VectorValue clearOldPosition;
 
     public void StandardPath()
     {
@@ -15,8 +19,8 @@ public class PathButtons : MonoBehaviour
         stats.Stength = 8;
         stats.Intelligence = 5;
         stats.Luck = 5;
-        ChangeScene();
         SetStatus();
+        ChangeScene();
     }
 
     public void SwiftPath()
@@ -26,8 +30,8 @@ public class PathButtons : MonoBehaviour
         stats.Stength = 5;
         stats.Intelligence = 5;
         stats.Luck = 5;
-        ChangeScene();
         SetStatus();
+        ChangeScene();
     }
 
     public void HyperPath()
@@ -37,13 +41,17 @@ public class PathButtons : MonoBehaviour
         stats.Stength = 13;
         stats.Intelligence = 5;
         stats.Luck = 5;
-        ChangeScene();
         SetStatus();
+        ChangeScene();
     }
 
     private void ChangeScene()
     {
-        SceneManager.LoadScene(2);
+        sceneInfo.spawningScene = clearOldScene.spawningScene;
+        sceneInfo.playerSpawnPosition = clearOldPosition.intialValue;
+
+        SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
+        vectorValue.intialValue = sceneInfo.playerSpawnPosition;
     }
 
     private void SetStatus()
@@ -53,6 +61,8 @@ public class PathButtons : MonoBehaviour
 
         status.attackDamage = stats.Stength + (stats.Agility/4);
 
-        status.dashingCooldown -= stats.Agility/30f;
+        status.dashingCooldown = 0.8f - stats.Agility/30f;
+
+        status.healQuantity = 3;
     }
 }

@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    public SceneInfo sceneInfo;
+    public VectorValue vectorValue;
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
+        vectorValue.intialValue = sceneInfo.playerSpawnPosition;
     }
 }

@@ -1440,6 +1440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a31c9ea70d1f14a920554106f7b019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneInfo: {fileID: 11400000, guid: 4a7a38630ea379a4abfc23782719ea23, type: 2}
+  vectorValue: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
 --- !u!1 &2775772449404737446
 GameObject:
   m_ObjectHideFlags: 0

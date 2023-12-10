@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    public SceneInfo sceneInfo;
+    public VectorValue vectorValue;
     public void ToPathSelection()
     {
         SceneManager.LoadScene(1);
@@ -13,5 +15,11 @@ public class Buttons : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void LoadSave()
+    {
+        SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
+        vectorValue.intialValue = sceneInfo.playerSpawnPosition;
     }
 }
