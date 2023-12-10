@@ -8,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
     public LayerMask bosslayers;
     public Status status;
+    public PlayerMovement playerMovement;
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -16,7 +17,7 @@ public class PlayerCombat : MonoBehaviour
     float nextAttackTime = 0f;
     void Update()
     {
-        if (Time.time >= nextAttackTime)
+        if (Time.time >= nextAttackTime && playerMovement.isGrounded == true && playerMovement.isDashing == false)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
