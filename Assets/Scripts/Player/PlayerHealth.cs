@@ -10,11 +10,13 @@ public class PlayerHealth : MonoBehaviour
     public Image healthBar;
     public GameObject player;
     public Status status;
+    public Collider2D playerHurtBox;
 
     public bool isDeath = false;
 
     bool isHit = false;
     [SerializeField] Color damageColor = Color.red;
+    [SerializeField] Color iframeColor = Color.grey;
     public SpriteRenderer sr;
     Color defaultColor;
 
@@ -39,9 +41,21 @@ public class PlayerHealth : MonoBehaviour
 
     IEnumerator SwitchColor()
     {
+        playerHurtBox.enabled = false;
         sr.color = damageColor;
         yield return new WaitForSeconds(0.2f);
+        sr.color = iframeColor;
+        yield return new WaitForSeconds(0.4f);
         sr.color = defaultColor;
+        yield return new WaitForSeconds(0.2f);
+        sr.color = iframeColor;
+        yield return new WaitForSeconds(0.3f);
+        sr.color = defaultColor;
+        yield return new WaitForSeconds(0.1f);
+        sr.color = iframeColor;
+        yield return new WaitForSeconds(0.3f);
+        sr.color = defaultColor;
+        playerHurtBox.enabled = true;
         isHit = false;
     }
 }

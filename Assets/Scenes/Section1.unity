@@ -7150,6 +7150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cb7851d6d2fa14fa16a9136d00221a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2115695557 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5766895401018250792, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+  m_PrefabInstance: {fileID: 3448118523304677643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2116191112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7325,10 +7330,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5766895401018250792, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7095409935563790099, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1239235775}
+    - target: {fileID: 7095409935563790099, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: iframeColor.b
+      value: 0.54901963
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095409935563790099, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: iframeColor.g
+      value: 0.54901963
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095409935563790099, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: iframeColor.r
+      value: 0.54901963
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095409935563790099, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: playerHurtBox
+      value: 
+      objectReference: {fileID: 2115695557}
+    - target: {fileID: 9020045557814848403, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020045557814848403, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020045557814848403, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020045557814848403, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
