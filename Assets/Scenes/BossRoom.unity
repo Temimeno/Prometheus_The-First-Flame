@@ -691,6 +691,7 @@ MonoBehaviour:
   healthBar: {fileID: 1554135468}
   player: {fileID: 370532624}
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  playerHurtBox: {fileID: 0}
   isDeath: 0
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   iframeColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1404,6 +1405,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  playerMovement: {fileID: 0}
   attackPoint: {fileID: 81484825}
   attackRange: 0.6
   attackTriggerDelay: 0.2
@@ -1422,8 +1424,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 370532626}
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  playerHurtBox: {fileID: 0}
   moveSpeed: 8
   isGrounded: 0
+  isDashing: 0
   dashingPower: 24
   dashingTime: 0.2
   startingPosition: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
@@ -2414,7 +2418,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3860,7 +3864,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
