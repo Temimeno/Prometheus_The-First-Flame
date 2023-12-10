@@ -10,6 +10,7 @@ public class BossHealth : MonoBehaviour
     
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
+    public GameObject boss;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class BossHealth : MonoBehaviour
         
         if(Hp <= 0)
         {
-            Destroy(gameObject);
+            Destroy(boss);
         }
     }
 
