@@ -7,10 +7,12 @@ public class BossBehavior : MonoBehaviour
     public float timer;
     public bool inRange;
     public GameObject triggerArea;
-    
+    public int AttackBoss = 1;
+    public GameObject beam;
+    public GameObject shootBeam;
+
     private float inTimer;
-    private int AttackBoss = 1;
-    private bool cooling;
+    private bool cooling = true;
     private Animator anim;
     private BossHealth bossHealth;
     
@@ -34,7 +36,12 @@ public class BossBehavior : MonoBehaviour
     {
         if(!cooling && AttackBoss == 1)
         {
-            Attack01();
+            Attack01_Left_Vertical();
+        }
+
+        if(!cooling && AttackBoss == 2)
+        {
+            Attack01_Right_Horizontal();
         }
 
         if(cooling)
@@ -43,13 +50,22 @@ public class BossBehavior : MonoBehaviour
         }
     }
 
-    void Attack01()
+    void Attack01_Left_Vertical()
     {
         timer = inTimer;
         cooling = true;
         AttackBoss = 2;
-
+        Instantiate(beam, shootBeam.transform.position, Quaternion.identity);
         anim.SetTrigger("Attack01");
+    }
+
+    void Attack01_Right_Horizontal()
+    {
+        timer = inTimer;
+        cooling = true;
+        AttackBoss = 1;
+
+        anim.SetTrigger("Attack01_Right");
     }
 
     void Cooldown()
