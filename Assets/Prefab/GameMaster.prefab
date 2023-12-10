@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2691893886834142473}
   - component: {fileID: 4909099155146640699}
   - component: {fileID: 8373521996069019977}
+  - component: {fileID: -90703464464685527}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: GM
@@ -61,3 +62,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneInfo: {fileID: 11400000, guid: 4a7a38630ea379a4abfc23782719ea23, type: 2}
   vectorValue: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
+--- !u!114 &-90703464464685527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4848923907020858575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94fe281d6567f37448f14a4b1f130461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 5d5cafa29df800649825710a8b15be3b, type: 2}
+  souls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
+  status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}

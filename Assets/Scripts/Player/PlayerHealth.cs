@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,19 +9,20 @@ public class PlayerHealth : MonoBehaviour
     YouDied youDied;
     public Image healthBar;
     public GameObject player;
+    public Status status;
+    public Collider2D playerHurtBox;
 
-    public float MaxHealth = 50;
-    public float CurrentHealth;
     public bool isDeath = false;
 
     bool isHit = false;
     [SerializeField] Color damageColor = Color.red;
+    [SerializeField] Color iframeColor = Color.grey;
     public SpriteRenderer sr;
     Color defaultColor;
 
     void Start()
     {
-        CurrentHealth = MaxHealth;
+        healthBar.fillAmount = status.CurrentHealth / status.MaxHealth;
         defaultColor = sr.color;
     }
 
@@ -28,9 +30,9 @@ public class PlayerHealth : MonoBehaviour
     {
         isHit = true;
         StartCoroutine("SwitchColor");
-        CurrentHealth -= Damage;
-        healthBar.fillAmount = CurrentHealth / MaxHealth;
-        if(CurrentHealth <= 0)
+        status.CurrentHealth -= Damage;
+        healthBar.fillAmount = status.CurrentHealth / status.MaxHealth;
+        if(status.CurrentHealth <= 0)
         {
             Destroy(player);
             isDeath = true;
@@ -39,9 +41,21 @@ public class PlayerHealth : MonoBehaviour
 
     IEnumerator SwitchColor()
     {
+        playerHurtBox.enabled = false;
         sr.color = damageColor;
         yield return new WaitForSeconds(0.2f);
+        sr.color = iframeColor;
+        yield return new WaitForSeconds(0.4f);
         sr.color = defaultColor;
+        yield return new WaitForSeconds(0.2f);
+        sr.color = iframeColor;
+        yield return new WaitForSeconds(0.3f);
+        sr.color = defaultColor;
+        yield return new WaitForSeconds(0.1f);
+        sr.color = iframeColor;
+        yield return new WaitForSeconds(0.3f);
+        sr.color = defaultColor;
+        playerHurtBox.enabled = true;
         isHit = false;
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
+    public Status status;
 
     // Walk
     public float moveSpeed = 8f;
@@ -15,14 +16,13 @@ public class PlayerMovement : MonoBehaviour
 
     // Jump
     private float jumpingPower = 21f;
-    bool isGrounded;
+    public bool isGrounded;
 
     // Dash
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 24f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 0.5f;
+    public float dashingPower = 24f;
+    public float dashingTime = 0.2f;
 
     // Camera
     private float _fallSpeedYDampingChangeThreshold;
@@ -145,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
         isDashing = false;
         
         // Dash Cooldown
-        yield return new WaitForSeconds(dashingCooldown);
+        yield return new WaitForSeconds(status.dashingCooldown);
         canDash = true;
     }
 }
