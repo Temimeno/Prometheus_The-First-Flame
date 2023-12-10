@@ -10,6 +10,8 @@ public class Boss : MonoBehaviour
     public GameObject bossHealthBar;
     public GameObject boxActive;
     public Animator anim;
+    public GameObject RoomBlock;
+    public GameObject Platform;
 
 
     void Start()
@@ -30,6 +32,8 @@ public class Boss : MonoBehaviour
             Destroy(boxActive);
             boss.SetActive(true);
             bossHealthBar.SetActive(true);
+            RoomBlock.SetActive(true);
+            Platform.SetActive(true);
             anim.SetTrigger("OpenBoss");
         }
     }

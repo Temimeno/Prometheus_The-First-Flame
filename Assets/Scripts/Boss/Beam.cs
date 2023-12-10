@@ -5,6 +5,7 @@ using UnityEngine;
 public class Beam : MonoBehaviour
 {
     public float timer;
+    public float Damage = 5;
     public float timerDestroy;
     
     private Animator anim;
@@ -27,9 +28,9 @@ public class Beam : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag == "Player")
+        if(col.tag == "PlayerHealth")
         {
-            col.GetComponent<PlayerHealth>().TakeDamage(10);
+            col.gameObject.GetComponent<PlayerHealth>().TakeDamage(Damage);
         }
     }
 

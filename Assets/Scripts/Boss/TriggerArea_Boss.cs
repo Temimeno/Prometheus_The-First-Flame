@@ -6,7 +6,7 @@ public class TriggerArea_Boss : MonoBehaviour
 {
     private BossBehavior bossparent;
 
-    private void Awake()
+    void Awake()
     {
         bossparent = GetComponentInParent<BossBehavior>();
     }
