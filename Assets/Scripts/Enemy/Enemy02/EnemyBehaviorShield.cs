@@ -84,9 +84,6 @@ public class EnemyBehaviorShield : MonoBehaviour
 
         anim.SetBool("Walk", false);
         anim.SetBool("Attack", true);
-
-        
-        rb.velocity = -transform.right * 10f;
     }
 
 

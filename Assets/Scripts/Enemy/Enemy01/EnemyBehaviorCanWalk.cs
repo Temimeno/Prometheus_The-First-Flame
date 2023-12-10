@@ -123,6 +123,7 @@ public class EnemyBehaviorCanWalk : MonoBehaviour
 
         if(distanceToLeft > distanceToRight)
         {
+            
             target = LeftLimit;
         }
         else
