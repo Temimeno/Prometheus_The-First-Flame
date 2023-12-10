@@ -7,9 +7,9 @@ public class PlayerCombat : MonoBehaviour
     public Animator animator;
     public LayerMask enemyLayers;
     public LayerMask bosslayers;
+    public Status status;
 
     public Transform attackPoint;
-    public float attackDamage = 10;
     public float attackRange = 0.5f;
     public float attackTriggerDelay = 0.2f;
     public float attackRate = 2f;
@@ -37,12 +37,12 @@ public class PlayerCombat : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            enemy.GetComponent<EnemyHealth>().TakeDamage(status.attackDamage);
         }
 
         foreach (Collider2D boss in hitboss)
         {
-            boss.GetComponent<BossHealth>().TakeDamage(attackDamage);
+            boss.GetComponent<BossHealth>().TakeDamage(status.attackDamage);
         }
     }
 

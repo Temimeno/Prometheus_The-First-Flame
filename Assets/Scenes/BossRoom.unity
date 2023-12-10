@@ -688,10 +688,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cb7851d6d2fa14fa16a9136d00221a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  player: {fileID: 0}
-  MaxHealth: 50
-  CurrentHealth: 0
+  healthBar: {fileID: 1554135468}
+  player: {fileID: 370532624}
+  status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
   isDeath: 0
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   sr: {fileID: 370532632}
@@ -1138,6 +1137,7 @@ GameObject:
   - component: {fileID: 370532629}
   - component: {fileID: 370532628}
   - component: {fileID: 370532627}
+  - component: {fileID: 370532634}
   - component: {fileID: 370532626}
   - component: {fileID: 370532625}
   m_Layer: 6
@@ -1315,8 +1315,8 @@ MonoBehaviour:
   bosslayers:
     serializedVersion: 2
     m_Bits: 512
+  status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
   attackPoint: {fileID: 81484825}
-  attackDamage: 10
   attackRange: 0.6
   attackTriggerDelay: 0.2
   attackRate: 2.5
@@ -1333,8 +1333,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 370532626}
+  status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
   moveSpeed: 8
-  startingPosition: {fileID: 0}
+  isGrounded: 0
+  dashingPower: 24
+  dashingTime: 0.2
+  startingPosition: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
   rb: {fileID: 370532631}
   groundCheck: {fileID: 233712609}
   groundLayer:
@@ -1483,6 +1487,20 @@ Transform:
   - {fileID: 84371143}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370532634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370532624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22217eadd347c2c478099ea626fd12cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpbar: {fileID: 1554135468}
+  status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
 --- !u!1 &375399804
 GameObject:
   m_ObjectHideFlags: 0
