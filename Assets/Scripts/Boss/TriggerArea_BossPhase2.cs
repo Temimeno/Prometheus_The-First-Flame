@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerArea_Boss : MonoBehaviour
+public class TriggerArea_BossPhase2 : MonoBehaviour
 {
-    private BossBehavior bossparent;
+    private BossBehaviorPhase2 bossparentPhase2;
 
 
     void Awake()
     {
-        bossparent = GetComponentInParent<BossBehavior>();
+        bossparentPhase2 = GetComponentInParent<BossBehaviorPhase2>();
         
     }
 
@@ -17,7 +17,7 @@ public class TriggerArea_Boss : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            bossparent.inRange = true;
+            bossparentPhase2.inRange = true;
         }
     }
 }
