@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
     public float MaxHp = 100;
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
+    public PlayerHealth playerHealth;
 
     void Start()
     {
@@ -23,6 +24,14 @@ public class EnemyHealth : MonoBehaviour
         if(Hp <= 0)
         {
             Destroy(enemyPrefab);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider2D)
+    {
+        if (collider2D.tag == "Player")
+        {
+            playerHealth.TakeDamage(10);
         }
     }
 

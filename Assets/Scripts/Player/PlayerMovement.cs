@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Animator animator;
     public Status status;
+    public Collider2D playerHurtBox;
 
     // Walk
     public float moveSpeed = 8f;
@@ -20,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Dash
     private bool canDash = true;
-    private bool isDashing;
+    public bool isDashing;
     public float dashingPower = 24f;
     public float dashingTime = 0.2f;
 
@@ -131,6 +132,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Dash()
     {
         // Dashing
+        playerHurtBox.enabled = false;
         canDash = false;
         isDashing = true;
         float originalGravity = rb.gravityScale;
@@ -143,6 +145,7 @@ public class PlayerMovement : MonoBehaviour
         trailRenderer.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
+        playerHurtBox.enabled = true;
         
         // Dash Cooldown
         yield return new WaitForSeconds(status.dashingCooldown);

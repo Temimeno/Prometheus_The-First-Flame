@@ -212,6 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1742403230351275808}
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  playerHurtBox: {fileID: 5766895401018250792}
   moveSpeed: 8
   isGrounded: 0
   dashingPower: 24
@@ -243,6 +244,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  playerMovement: {fileID: 5222351033387551320}
   attackPoint: {fileID: 7417137736265131389}
   attackRange: 0.6
   attackTriggerDelay: 0.2
@@ -503,8 +505,10 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   player: {fileID: 4488036989424134371}
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  playerHurtBox: {fileID: 5766895401018250792}
   isDeath: 0
   damageColor: {r: 1, g: 0, b: 0, a: 1}
+  iframeColor: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   sr: {fileID: 9020045557814848403}
 --- !u!1 &7315606176099561729
 GameObject:
