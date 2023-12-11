@@ -310,7 +310,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.8
+        time: 0.75
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -319,7 +319,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.81666666
+        time: 0.8833333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -383,84 +383,6 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
     flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 1.1764705
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.85
-        value: 1
-        inSlope: 1.1764705
-        outSlope: 20.00002
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.9
-        value: 2
-        inSlope: 20.00002
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_SortingOrder
-    path: LeftHand/Sweep
-    classID: 212
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 1.1111112
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.9
-        value: 3
-        inSlope: 1.1111112
-        outSlope: -7.5000005
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1.0333333
-        value: 2
-        inSlope: -7.5000005
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_SortingOrder
-    path: LeftHand
-    classID: 212
-    script: {fileID: 0}
-    flags: 0
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
@@ -516,13 +438,11 @@ AnimationClip:
       value: {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
     - time: 0.81666666
       value: {fileID: 21300000, guid: 204c6f9108e32314e991909516bf1aed, type: 3}
-    - time: 0.8666667
+    - time: 0.9166667
       value: {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
-    - time: 0.9
-      value: {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
-    - time: 0.93333334
+    - time: 0.95
       value: {fileID: 21300000, guid: 204c6f9108e32314e991909516bf1aed, type: 3}
-    - time: 1.0333333
+    - time: 0.98333335
       value: {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
     attribute: m_Sprite
     path: LeftHand/Sweep
@@ -618,24 +538,6 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 627108811
-      attribute: 3762991556
-      script: {fileID: 0}
-      typeID: 212
-      customType: 26
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 3061183340
-      attribute: 3762991556
-      script: {fileID: 0}
-      typeID: 212
-      customType: 26
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
       path: 3061183340
       attribute: 0
       script: {fileID: 0}
@@ -682,7 +584,6 @@ AnimationClip:
     - {fileID: 21300000, guid: 070114dfe4811e047a152fb0a1ce59f6, type: 3}
     - {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
     - {fileID: 21300000, guid: 204c6f9108e32314e991909516bf1aed, type: 3}
-    - {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
     - {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
     - {fileID: 21300000, guid: 204c6f9108e32314e991909516bf1aed, type: 3}
     - {fileID: 21300000, guid: 12d8efc0372c56944badede169fe8ec0, type: 3}
@@ -1516,7 +1417,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.8
+        time: 0.75
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -1525,7 +1426,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.81666666
+        time: 0.8833333
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -1586,84 +1487,6 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_SortingOrder
     path: Head
-    classID: 212
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 1.1764705
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.85
-        value: 1
-        inSlope: 1.1764705
-        outSlope: 20.00002
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.9
-        value: 2
-        inSlope: 20.00002
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_SortingOrder
-    path: LeftHand/Sweep
-    classID: 212
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 1.1111112
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.9
-        value: 3
-        inSlope: 1.1111112
-        outSlope: -7.5000005
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1.0333333
-        value: 2
-        inSlope: -7.5000005
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_SortingOrder
-    path: LeftHand
     classID: 212
     script: {fileID: 0}
     flags: 0

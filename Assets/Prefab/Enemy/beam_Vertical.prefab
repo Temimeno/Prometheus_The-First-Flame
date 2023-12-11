@@ -166,4 +166,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  timerDestroy: 2
+  Damage: 20
+  timerDestroy: 3.5
