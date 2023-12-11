@@ -7017,6 +7017,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3312458498750929957, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4092878977588011551, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7106,6 +7110,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+--- !u!1 &1399577870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 168578725577103281, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+  m_PrefabInstance: {fileID: 1399577869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1399577871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8901496922671496675, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+  m_PrefabInstance: {fileID: 1399577869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1443613524
 GameObject:
   m_ObjectHideFlags: 0
@@ -8138,11 +8152,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 38.44, y: 3.9228318}
   m_EdgeRadius: 0
---- !u!1 &1672582604 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8047635116299261137, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 1399577869}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1689887961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8202,11 +8211,11 @@ PrefabInstance:
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion2
       value: 
-      objectReference: {fileID: 1672582604}
+      objectReference: {fileID: 1399577871}
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion3
       value: 
-      objectReference: {fileID: 1837140047}
+      objectReference: {fileID: 1399577870}
     - target: {fileID: 1917742691450883606, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: soulsAmount
       value: 
@@ -8856,11 +8865,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2964034479247979137, guid: 8189c46bf0a684b4e87551969fd51bbd, type: 3}
   m_PrefabInstance: {fileID: 1826792024}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1837140047 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4109382869412434583, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 1399577869}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1840158066
 PrefabInstance:
