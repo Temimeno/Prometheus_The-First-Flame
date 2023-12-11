@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 6268089591539158209}
   - component: {fileID: 7545738119081767857}
   - component: {fileID: 2910332523241021451}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 2507701709340261203}
   - component: {fileID: 473821399767707267}
   - component: {fileID: 7477760993162264264}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Attackbox_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 7545156138600451223}
   - component: {fileID: 4141100461097814425}
   - component: {fileID: 1586431614278891522}
+  - component: {fileID: 3877189415209570902}
   m_Layer: 10
   m_Name: Path
   m_TagString: Untagged
@@ -421,8 +422,6 @@ MonoBehaviour:
   inRange: 0
   AttackBoss: 1
   triggerArea: {fileID: 3279736804571047975}
-  BossPhase1: {fileID: 2724243601916501592}
-  BossPhase2: {fileID: 0}
   BeamHorizontal: {fileID: 0}
   BeamVertical: {fileID: 0}
   SpawnBeamHorizontal01: {fileID: 0}
@@ -431,6 +430,27 @@ MonoBehaviour:
   SpawnBeamVertical02: {fileID: 0}
   SpawnBeamVertical03: {fileID: 0}
   SpawnBeamVertical04: {fileID: 0}
+--- !u!114 &3877189415209570902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789115527585208475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2d7a786de4dc8c4aacaa562cf0aaa03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hp: 0
+  MaxHp: 3000
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  spriteRenderer: {fileID: 0}
+  bossPhase1: {fileID: 0}
+  bossPhase2: {fileID: 0}
+  anim: {fileID: 0}
+  bossHpBar: {fileID: 0}
+  ChangeBoss: 0
 --- !u!1 &2991023574264216082
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +546,7 @@ GameObject:
   - component: {fileID: 4643929220726357244}
   - component: {fileID: 281115602507326903}
   - component: {fileID: 7302159932374255397}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: triggerArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,8 +635,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3789183769092127138}
   - component: {fileID: 4277727188981682895}
-  - component: {fileID: 5931963036718618482}
-  - component: {fileID: 7254558279872476316}
   m_Layer: 10
   m_Name: Head
   m_TagString: BossHealth
@@ -691,68 +709,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5931963036718618482
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4964024213928454250}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.82, y: 0.79}
-  m_EdgeRadius: 0
---- !u!114 &7254558279872476316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4964024213928454250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2d7a786de4dc8c4aacaa562cf0aaa03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: 0
-  MaxHp: 3000
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 4277727188981682895}
-  boss: {fileID: 2789115527585208475}
 --- !u!1 &7261920265129077292
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +817,7 @@ GameObject:
   - component: {fileID: 3086556877276497417}
   - component: {fileID: 4950302729542291597}
   - component: {fileID: 5397707822030733168}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 159533908}
   - component: {fileID: 159533909}
   - component: {fileID: 159533910}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: triggerArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273600235}
   - component: {fileID: 273600236}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1877,7 +1877,7 @@ Transform:
   m_GameObject: {fileID: 1033594425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.871597, y: 2.9641323, z: -0.2796588}
+  m_LocalPosition: {x: -17.871597, y: -2.6, z: -0.2796588}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2363,7 +2363,7 @@ Transform:
   m_GameObject: {fileID: 1129660322}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: 8.960708, z: -0.017790496}
+  m_LocalPosition: {x: 2.37, y: 8.960708, z: -0.017790496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2456,7 +2456,7 @@ Transform:
   m_GameObject: {fileID: 1290608969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.0084867, y: 8.960708, z: -0.017790496}
+  m_LocalPosition: {x: -7.48, y: 8.960708, z: -0.017790496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2571,7 +2571,7 @@ Transform:
   m_GameObject: {fileID: 1386709926}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.871597, y: -8.865868, z: -0.2796588}
+  m_LocalPosition: {x: -17.871597, y: -7.8, z: -0.2796588}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2688,7 +2688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1448511875
 Transform:
   m_ObjectHideFlags: 0
@@ -2720,7 +2720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1508906903
 Transform:
   m_ObjectHideFlags: 0
@@ -3488,8 +3488,8 @@ GameObject:
   - component: {fileID: 1924551592}
   - component: {fileID: 1924551595}
   - component: {fileID: 1924551594}
-  - component: {fileID: 1924551593}
-  m_Layer: 9
+  - component: {fileID: 1924551596}
+  m_Layer: 10
   m_Name: Head
   m_TagString: BossHealth
   m_Icon: {fileID: 0}
@@ -3511,24 +3511,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1660505468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1924551593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924551591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2d7a786de4dc8c4aacaa562cf0aaa03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: 0
-  MaxHp: 5000
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 1924551595}
-  bossPhase1: {fileID: 0}
-  bossPhase2: {fileID: 0}
 --- !u!61 &1924551594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3626,6 +3608,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1924551596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924551591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65542b764d2162143a269f93481c1c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hp: 1500
+  MaxHp: 3000
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  spriteRenderer: {fileID: 1924551595}
+  bossPhase2: {fileID: 1448511874}
 --- !u!114 &1949827649 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6188113860778673727, guid: ab174bd79a87ccb46a736c09562705f2, type: 3}
@@ -3921,10 +3920,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2724243601916501592, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2789115527585208475, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3279736804571047975, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3424845085346647968, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
@@ -3943,6 +3946,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7254558279872476316, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
+      propertyPath: bossHpBar
+      value: 
+      objectReference: {fileID: 1511208320}
     - target: {fileID: 7254558279872476316, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
       propertyPath: bossPhase1
       value: 

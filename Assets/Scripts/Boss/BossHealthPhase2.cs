@@ -3,34 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossHealth : MonoBehaviour
+public class BossHealthPhase2 : MonoBehaviour
 {
-    public float Hp;
+    public float Hp = 1500f;
     public float MaxHp = 3000f;
     
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
-    public GameObject bossPhase1;
     public GameObject bossPhase2;
-    public Animator anim;
+    private Animator anim;
     public Image bossHpBar;
-
-    public bool ChangeBoss = false;
-
-    void Awake()
+    void Start()
     {
-        Hp = MaxHp;
+        Hp = 1500;
         anim = GetComponent<Animator>();
-    }
-
-    void Update()
-    {
-        if(Hp <= 1500 && ChangeBoss == false)
-        {   
-            anim.SetTrigger("Phase2");
-            StartCoroutine(ChangeBossPhase());
-            ChangeBoss = true;
-        }
     }
     
     public void TakeDamage(float damage)
@@ -39,7 +25,6 @@ public class BossHealth : MonoBehaviour
         StartCoroutine(ChangneColorDamage());
         bossHpBar.fillAmount = Hp / MaxHp;
 
-        
         if(Hp <= 0)
         {
             Destroy(bossPhase2);
@@ -52,14 +37,6 @@ public class BossHealth : MonoBehaviour
         spriteRenderer.color = damageColor;
         yield return new WaitForSeconds(0.2f);
         spriteRenderer.color = originalColor;
-    }
-
-    IEnumerator ChangeBossPhase()
-    {
-        yield return new WaitForSeconds(6f);
-        bossPhase2.SetActive(true);
-        bossPhase1.SetActive(false);
-
     }
 
 }

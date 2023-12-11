@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
     public Animator animator;
     public LayerMask enemyLayers;
     public LayerMask bosslayers;
+    public LayerMask bosslayerPhase2;
     public Status status;
     public PlayerMovement playerMovement;
 
@@ -34,6 +35,8 @@ public class PlayerCombat : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         
         Collider2D[] hitboss = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bosslayers);
+        
+        Collider2D[] hitbossPhase2 = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, bosslayerPhase2);
 
 
         foreach (Collider2D enemy in hitEnemies)
@@ -44,6 +47,11 @@ public class PlayerCombat : MonoBehaviour
         foreach (Collider2D boss in hitboss)
         {
             boss.GetComponent<BossHealth>().TakeDamage(status.attackDamage);
+        }
+
+        foreach (Collider2D boss2 in hitbossPhase2)
+        {
+            boss2.GetComponent<BossHealthPhase2>().TakeDamage(status.attackDamage);
         }
     }
 
