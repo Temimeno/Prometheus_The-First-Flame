@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8395226146978492351}
   - component: {fileID: 2495354745043574707}
   m_Layer: 0
-  m_Name: EnemyShield
+  m_Name: Enemyshield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,8 +290,8 @@ MonoBehaviour:
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   spriteRenderer: {fileID: 8580564205487254287}
   playerHealth: {fileID: 0}
-  playerSouls: {fileID: 0}
-  enemySouls: {fileID: 0}
+  playerSouls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
+  enemySouls: {fileID: 11400000, guid: 0009cd4d0e862f14b851ab5e81a2f4ea, type: 2}
 --- !u!61 &2418168593979937343
 BoxCollider2D:
   m_ObjectHideFlags: 0

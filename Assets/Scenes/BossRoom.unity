@@ -4535,8 +4535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65542b764d2162143a269f93481c1c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: 100
-  MaxHp: 200
+  Hp: 1000
+  MaxHp: 2000
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   spriteRenderer: {fileID: 1924551595}
   bossPhase2: {fileID: 1448511874}
@@ -5565,7 +5565,7 @@ PrefabInstance:
       objectReference: {fileID: 291223334}
     - target: {fileID: 3877189415209570902, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
       propertyPath: MaxHp
-      value: 200
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 3877189415209570902, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
       propertyPath: bossHpBar
