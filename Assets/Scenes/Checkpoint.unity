@@ -399,16 +399,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91549c576bca2c04abd1f44c19619c55, type: 3}
---- !u!1 &207442969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4109382869412434583, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 1488922482}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &326568298 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8047635116299261137, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 1488922482}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &444301258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -739,11 +729,11 @@ PrefabInstance:
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion2
       value: 
-      objectReference: {fileID: 326568298}
+      objectReference: {fileID: 0}
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion3
       value: 
-      objectReference: {fileID: 207442969}
+      objectReference: {fileID: 0}
     - target: {fileID: 1917742691450883606, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: soulsAmount
       value: 
