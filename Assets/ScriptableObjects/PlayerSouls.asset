@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db18d469774e1b49b33894cab14fc8c, type: 3}
   m_Name: PlayerSouls
   m_EditorClassIdentifier: 
-  soul: 30
+  soul: 0

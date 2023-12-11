@@ -9,7 +9,7 @@ public class StartSpawnLoad : MonoBehaviour
     public VectorValue vectorValue;
     void Start()
     {
-        SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
+        SceneManager.LoadScene(sceneInfo.spawningScene);
         vectorValue.intialValue = sceneInfo.playerSpawnPosition;
     }
 }

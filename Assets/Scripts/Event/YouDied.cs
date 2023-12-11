@@ -11,7 +11,6 @@ public class YouDied : MonoBehaviour
     {
         if (playerHealth.isDeath == true)
         {
-            Time.timeScale = 0f;
             YouDiedUI.SetActive(true);
         }
     }

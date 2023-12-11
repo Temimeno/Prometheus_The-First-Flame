@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   Damage: 20
-  timerDestroy: 3.5
+  timerDestroy: 2.06
 --- !u!61 &7504780170707221383
 BoxCollider2D:
   m_ObjectHideFlags: 0

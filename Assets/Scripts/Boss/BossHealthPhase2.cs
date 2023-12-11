@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class BossHealthPhase2 : MonoBehaviour
 {
-    public float Hp = 1500f;
-    public float MaxHp = 3000f;
+    public float Hp = 1250f;
+    public float MaxHp = 2500f;
     
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
@@ -16,7 +16,7 @@ public class BossHealthPhase2 : MonoBehaviour
 
     void Awake()
     {
-        Hp = 1500;
+        Hp = 1250;
         anim = GetComponent<Animator>();
     }
     public void TakeDamage(float damage)

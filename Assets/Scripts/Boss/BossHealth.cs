@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHealth : MonoBehaviour
 {
     public float Hp;
-    public float MaxHp = 3000f;
+    public float MaxHp = 2500f;
     
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;

@@ -15,7 +15,7 @@ public class Restart : MonoBehaviour
         status.healQuantity = 3;
         playerSouls.soul /= 2;
 
-        SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
+        SceneManager.LoadScene(sceneInfo.spawningScene);
         vectorValue.intialValue = sceneInfo.playerSpawnPosition;
     }
 }

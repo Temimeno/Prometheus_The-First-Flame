@@ -20,12 +20,7 @@ public class Buttons : MonoBehaviour
 
     public void LoadSave()
     {
-        if (pathNumber.path == 0)
-        {
-            return;
-        }
-
-        else
+        if (pathNumber.path == false)
         {
             SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
             vectorValue.intialValue = sceneInfo.playerSpawnPosition;

@@ -22,7 +22,7 @@ public class PathButtons : MonoBehaviour
         stats.Intelligence = 5;
         stats.Luck = 5;
 
-        pathNumber.path = 1;
+        pathNumber.path = false;
 
         SetStatus();
         ChangeScene();
@@ -36,7 +36,7 @@ public class PathButtons : MonoBehaviour
         stats.Intelligence = 5;
         stats.Luck = 5;
         
-        pathNumber.path = 2;
+        pathNumber.path = false;
         
         SetStatus();
         ChangeScene();
@@ -50,7 +50,7 @@ public class PathButtons : MonoBehaviour
         stats.Intelligence = 5;
         stats.Luck = 5;
         
-        pathNumber.path = 3;
+        pathNumber.path = false;
         
         SetStatus();
         ChangeScene();
