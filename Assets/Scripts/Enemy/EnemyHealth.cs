@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if (collider2D.tag == "Player")
+        if (collider2D.tag == "PlayerHealth")
         {
             playerHealth.TakeDamage(10);
         }

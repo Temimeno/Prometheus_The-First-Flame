@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 4573822106144280581}
   - component: {fileID: 1742403230351275808}
   - component: {fileID: 6111023439313078996}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -245,13 +245,15 @@ MonoBehaviour:
   bosslayers:
     serializedVersion: 2
     m_Bits: 1024
+  bosslayerPhase2:
+    serializedVersion: 2
+    m_Bits: 0
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
   playerMovement: {fileID: 5222351033387551320}
   attackPoint: {fileID: 7417137736265131389}
   attackRange: 0.6
-  attackRate: 2.5
-  nextAttackTime: 0
   attackTriggerDelay: 0.2
+  attackRate: 2.5
 --- !u!114 &1917742691450883606
 MonoBehaviour:
   m_ObjectHideFlags: 0
