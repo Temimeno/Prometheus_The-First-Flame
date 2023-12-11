@@ -14,10 +14,12 @@ public class BossHealth : MonoBehaviour
     public GameObject bossPhase1;
     public GameObject bossPhase2;
     private Animator anim;
+    public Image bossHpBar;
 
     void Start()
     {
         Hp = MaxHp;
+        bossHpBar.fillAmount = Hp / MaxHp;
         anim = GetComponent<Animator>();
     }
     
@@ -25,6 +27,7 @@ public class BossHealth : MonoBehaviour
     {
         Hp -= damage;
         StartCoroutine(ChangneColorDamage());
+        bossHpBar.fillAmount = Hp / MaxHp;
 
         if(Hp <= 1500)
         {   

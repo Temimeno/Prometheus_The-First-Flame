@@ -3683,6 +3683,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1924551595}
   bossPhase1: {fileID: 0}
   bossPhase2: {fileID: 0}
+  bossHpBar: {fileID: 0}
 --- !u!61 &1924551594
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4132,6 +4133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 7254558279872476316, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
+      propertyPath: bossHpBar
+      value: 
+      objectReference: {fileID: 1511208320}
     - target: {fileID: 7254558279872476316, guid: 692b33baacf61b44998fb61136f04cf1, type: 3}
       propertyPath: bossPhase2
       value: 
