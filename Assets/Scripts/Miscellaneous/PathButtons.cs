@@ -12,6 +12,7 @@ public class PathButtons : MonoBehaviour
     public SceneInfo clearOldScene;
     public VectorValue vectorValue;
     public VectorValue clearOldPosition;
+    public PathNumber pathNumber;
 
     public void StandardPath()
     {
@@ -20,6 +21,9 @@ public class PathButtons : MonoBehaviour
         stats.Stength = 8;
         stats.Intelligence = 5;
         stats.Luck = 5;
+
+        pathNumber.path = 1;
+
         SetStatus();
         ChangeScene();
     }
@@ -31,6 +35,9 @@ public class PathButtons : MonoBehaviour
         stats.Stength = 5;
         stats.Intelligence = 5;
         stats.Luck = 5;
+        
+        pathNumber.path = 2;
+        
         SetStatus();
         ChangeScene();
     }
@@ -42,6 +49,9 @@ public class PathButtons : MonoBehaviour
         stats.Stength = 13;
         stats.Intelligence = 5;
         stats.Luck = 5;
+        
+        pathNumber.path = 3;
+        
         SetStatus();
         ChangeScene();
     }

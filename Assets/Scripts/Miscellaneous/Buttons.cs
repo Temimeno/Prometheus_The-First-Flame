@@ -7,6 +7,7 @@ public class Buttons : MonoBehaviour
 {
     public SceneInfo sceneInfo;
     public VectorValue vectorValue;
+    public PathNumber pathNumber;
     public void ToPathSelection()
     {
         SceneManager.LoadScene(1);
@@ -19,7 +20,15 @@ public class Buttons : MonoBehaviour
 
     public void LoadSave()
     {
-        SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
-        vectorValue.intialValue = sceneInfo.playerSpawnPosition;
+        if (pathNumber.path == 0)
+        {
+            return;
+        }
+
+        else
+        {
+            SceneManager.LoadScene(sceneInfo.spawningScene, LoadSceneMode.Single);
+            vectorValue.intialValue = sceneInfo.playerSpawnPosition;
+        }
     }
 }
