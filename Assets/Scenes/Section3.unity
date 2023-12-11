@@ -7959,7 +7959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 586536423789594494, guid: ab174bd79a87ccb46a736c09562705f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.892754
+      value: 13.902763
       objectReference: {fileID: 0}
     - target: {fileID: 6188113860778673727, guid: ab174bd79a87ccb46a736c09562705f2, type: 3}
       propertyPath: m_Follow
@@ -8011,11 +8011,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7776565087473926281, guid: ab174bd79a87ccb46a736c09562705f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.928242
+      value: -9.978242
       objectReference: {fileID: 0}
     - target: {fileID: 7776565087473926281, guid: ab174bd79a87ccb46a736c09562705f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.892764
+      value: 13.902764
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8162,11 +8162,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 232169435164578042, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.15
+      value: -9.2
       objectReference: {fileID: 0}
     - target: {fileID: 232169435164578042, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.54
+      value: 15.55
       objectReference: {fileID: 0}
     - target: {fileID: 232169435164578042, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10597,6 +10597,14 @@ PrefabInstance:
     - target: {fileID: 8890121043246798031, guid: e8bb2d5f8cf337f4b9dba3ef22213690, type: 3}
       propertyPath: sceneToLoad
       value: Section4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8890121043246798031, guid: e8bb2d5f8cf337f4b9dba3ef22213690, type: 3}
+      propertyPath: playerPosition.x
+      value: -8.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8890121043246798031, guid: e8bb2d5f8cf337f4b9dba3ef22213690, type: 3}
+      propertyPath: playerPosition.y
+      value: -3.76
       objectReference: {fileID: 0}
     - target: {fileID: 8890121043246798031, guid: e8bb2d5f8cf337f4b9dba3ef22213690, type: 3}
       propertyPath: playerPositionStorage
