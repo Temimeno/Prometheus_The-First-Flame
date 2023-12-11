@@ -8,19 +8,29 @@ public class BossHealth : MonoBehaviour
     public float Hp;
     public float MaxHp = 3000f;
     
-    [SerializeField] GameObject bossPrefab;
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
     public GameObject bossPhase1;
     public GameObject bossPhase2;
-    private Animator anim;
+    public Animator anim;
     public Image bossHpBar;
 
-    void Start()
+    public bool ChangeBoss = false;
+
+    void Awake()
     {
         Hp = MaxHp;
-        bossHpBar.fillAmount = Hp / MaxHp;
         anim = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        if(Hp <= 1500 && ChangeBoss == false)
+        {   
+            anim.SetTrigger("Phase2");
+            StartCoroutine(ChangeBossPhase());
+            ChangeBoss = true;
+        }
     }
     
     public void TakeDamage(float damage)
@@ -29,11 +39,6 @@ public class BossHealth : MonoBehaviour
         StartCoroutine(ChangneColorDamage());
         bossHpBar.fillAmount = Hp / MaxHp;
 
-        if(Hp <= 1500)
-        {   
-            anim.SetTrigger("Phase2");
-            StartCoroutine(ChangeBossPhase());
-        }
         
         if(Hp <= 0)
         {
@@ -51,7 +56,7 @@ public class BossHealth : MonoBehaviour
 
     IEnumerator ChangeBossPhase()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(6f);
         bossPhase2.SetActive(true);
         bossPhase1.SetActive(false);
 

@@ -11,6 +11,8 @@ public class BossBehaviorPhase2 : MonoBehaviour
     
     public GameObject BeamHorizontal;
     public GameObject BeamVertical;
+    public GameObject BeamVerticalPhase2;
+
     public GameObject SpawnBeamHorizontal01;
     public GameObject SpawnBeamHorizontal02;
     
@@ -20,7 +22,13 @@ public class BossBehaviorPhase2 : MonoBehaviour
     public GameObject SpawnBeamVertical03;
     public GameObject SpawnBeamVertical04;
 
-    
+    public GameObject SpawnBeamVerticalPhase01;
+    public GameObject SpawnBeamVerticalPhase02;
+    public GameObject SpawnBeamVerticalPhase03;
+    public GameObject SpawnBeamVerticalPhase04;
+    public GameObject SpawnBeamVerticalPhase05;
+    public GameObject SpawnBeamVerticalPhase06;
+
     
     private float inTimer;
     
@@ -105,6 +113,10 @@ public class BossBehaviorPhase2 : MonoBehaviour
         cooling = true;
         AttackBoss = 4;
 
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase01.transform.position, Quaternion.identity);
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase03.transform.position, Quaternion.identity);
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase05.transform.position, Quaternion.identity);
+
         anim.SetTrigger("Attack02");
     }
 
@@ -113,6 +125,10 @@ public class BossBehaviorPhase2 : MonoBehaviour
         timer += inTimer;
         cooling = true;
         AttackBoss = 1;
+
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase02.transform.position, Quaternion.identity);
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase04.transform.position, Quaternion.identity);
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase06.transform.position, Quaternion.identity);
 
         anim.SetTrigger("Attack02_Right");
     }
