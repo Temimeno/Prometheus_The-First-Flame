@@ -3551,6 +3551,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 2115695555}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk
@@ -3800,6 +3804,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 2115695555}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk
@@ -9907,6 +9915,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 2115695555}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk
