@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57d384f205c9774bb7ca6d2b667d23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 771556917938542723}
   Hp: 0
   MaxHp: 100
   damageColor: {r: 1, g: 0, b: 0, a: 1}

@@ -327,6 +327,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3070553932795731889, guid: 1507b7164207138478ff243912a37175, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 4166306328044859931, guid: 1507b7164207138478ff243912a37175, type: 3}
       propertyPath: m_Name
       value: Enemy_Two_Left 1 (1)
@@ -344,6 +348,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 10695111}
     m_Modifications:
+    - target: {fileID: 2227894628476114878, guid: 7d1b2b566a530684bb8efbc0c2e03bcc, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 5229388765502735910, guid: 7d1b2b566a530684bb8efbc0c2e03bcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.50776
@@ -449,6 +457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk
@@ -2786,6 +2798,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk
@@ -3243,6 +3259,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk
@@ -3504,6 +3524,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 10695111}
     m_Modifications:
+    - target: {fileID: 2227894628476114878, guid: 7d1b2b566a530684bb8efbc0c2e03bcc, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 5229388765502735910, guid: 7d1b2b566a530684bb8efbc0c2e03bcc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.515144
@@ -4063,6 +4087,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk (1)
@@ -4237,6 +4265,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4613039305911765954, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 6032507140954470147, guid: bad9264b665c10649a7ba57ba4265341, type: 3}
       propertyPath: m_Name
       value: Enemy_CanWalk
@@ -5169,6 +5201,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3070553932795731889, guid: 1507b7164207138478ff243912a37175, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 4166306328044859931, guid: 1507b7164207138478ff243912a37175, type: 3}
       propertyPath: m_Name
       value: Enemy_Two_Left 1
@@ -5411,6 +5447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyShield
       objectReference: {fileID: 0}
+    - target: {fileID: 7274986881947343537, guid: 3afb34724d66ac24c8422729ac3b7b7f, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1064811000}
     - target: {fileID: 7546898379699419019, guid: 3afb34724d66ac24c8422729ac3b7b7f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.1
