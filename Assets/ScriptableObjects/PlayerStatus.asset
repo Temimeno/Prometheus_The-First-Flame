@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerStatus
   m_EditorClassIdentifier: 
   MaxHealth: 60
-  CurrentHealth: 60
+  CurrentHealth: 50
   attackDamage: 8
   dashingCooldown: 0.3
   healAmount: 30
-  healQuantity: 3
+  healQuantity: 2

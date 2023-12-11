@@ -2683,11 +2683,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9084937825587837990, guid: bf3ca04f58b4f15429eba9a36e76e707, type: 3}
   m_PrefabInstance: {fileID: 1197497946}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1217254686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4109382869412434583, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 1813171482}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1240049670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5464,11 +5459,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1428984103441167378, guid: 090920f606f15f34e975762f8b1948e8, type: 3}
   m_PrefabInstance: {fileID: 1618767759}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1654201963 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8047635116299261137, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 1813171482}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1669892145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5528,11 +5518,11 @@ PrefabInstance:
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion2
       value: 
-      objectReference: {fileID: 1654201963}
+      objectReference: {fileID: 1813171484}
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion3
       value: 
-      objectReference: {fileID: 1217254686}
+      objectReference: {fileID: 1813171483}
     - target: {fileID: 1917742691450883606, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: soulsAmount
       value: 
@@ -6208,6 +6198,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+--- !u!1 &1813171483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 168578725577103281, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+  m_PrefabInstance: {fileID: 1813171482}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1813171484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8901496922671496675, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+  m_PrefabInstance: {fileID: 1813171482}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1925701078
 PrefabInstance:
   m_ObjectHideFlags: 0

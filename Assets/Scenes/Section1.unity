@@ -3486,11 +3486,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2150343713368807847, guid: 5d49510c6e30ec944bcf57d654e74713, type: 3}
   m_PrefabInstance: {fileID: 3953346787861771758}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &873497524 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8047635116299261137, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 9021663538213366105}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &885188533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5603,11 +5598,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 264633902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1468038218 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4109382869412434583, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-  m_PrefabInstance: {fileID: 9021663538213366105}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1468903565
 GameObject:
   m_ObjectHideFlags: 0
@@ -10956,11 +10946,11 @@ PrefabInstance:
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion2
       value: 
-      objectReference: {fileID: 873497524}
+      objectReference: {fileID: 9021663538213366108}
     - target: {fileID: 1382091690796023175, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: potion3
       value: 
-      objectReference: {fileID: 1468038218}
+      objectReference: {fileID: 9021663538213366107}
     - target: {fileID: 1917742691450883606, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: soulsAmount
       value: 
@@ -11423,6 +11413,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &9021663538213366107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 168578725577103281, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+  m_PrefabInstance: {fileID: 9021663538213366105}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9021663538213366108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8901496922671496675, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+  m_PrefabInstance: {fileID: 9021663538213366105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
