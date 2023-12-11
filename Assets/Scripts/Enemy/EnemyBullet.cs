@@ -22,7 +22,7 @@ public class EnemyBullet : MonoBehaviour
         if(time >= timeForColorToAppear)
         {
             StartCoroutine(ChangneColorBlaster());
-            if(time > timeSpawn)
+            if(time >= timeSpawn)
             {
                 Shoot();
             }
