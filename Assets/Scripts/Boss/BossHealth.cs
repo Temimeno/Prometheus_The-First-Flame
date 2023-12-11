@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BossHealth : MonoBehaviour
 {
     public float Hp;
-    public float MaxHp = 2500f;
+    public float MaxHp = 2000f;
     
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
@@ -25,7 +25,7 @@ public class BossHealth : MonoBehaviour
 
     void Update()
     {
-        if(Hp <= 1250 && ChangeBoss == false)
+        if(Hp <= 100 && ChangeBoss == false)
         {   
             anim.SetTrigger("Phase2");
             StartCoroutine(ChangeBossPhase());

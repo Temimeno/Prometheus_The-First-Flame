@@ -5,19 +5,30 @@ using UnityEngine.UI;
 
 public class BossHealthPhase2 : MonoBehaviour
 {
-    public float Hp = 1250f;
-    public float MaxHp = 2500f;
+    public float Hp = 1000f;
+    public float MaxHp = 2000f;
     
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
     public GameObject bossPhase2;
     public Animator anim;
     public Image bossHpBar;
+    public PlayerMovement playerMovement;
+    public Status playerStatus;
 
+    public GameObject playerUI;
+    public GameObject bossUI;
+    public GameObject topBlock;
+    public GameObject bottomBlock;
+    public GameObject EndScene;
+
+    float originCurrentHP;
+    float originMaxHP;
+    int originHeal;
 
     void Awake()
     {
-        Hp = 1250;
+        Hp = 100;
         anim = GetComponent<Animator>();
     }
     public void TakeDamage(float damage)
@@ -28,7 +39,17 @@ public class BossHealthPhase2 : MonoBehaviour
 
         if(Hp <= 0)
         {
-            
+            originCurrentHP = playerStatus.CurrentHealth;
+            originMaxHP = playerStatus.MaxHealth;
+            originHeal = playerStatus.healQuantity;
+            playerStatus.MaxHealth = 100;
+            playerStatus.CurrentHealth = 100;
+
+            playerUI.SetActive(false);
+            bossUI.SetActive(false);
+            topBlock.SetActive(true);
+            bottomBlock.SetActive(true);
+
             anim.SetTrigger("Death");
             StartCoroutine(BossDeath());
         }
@@ -45,6 +66,14 @@ public class BossHealthPhase2 : MonoBehaviour
     IEnumerator BossDeath()
     {
         yield return new WaitForSeconds(2.5f);
+        playerMovement.enabled = false;
+        yield return new WaitForSeconds(1.5f);
+        EndScene.SetActive(true);
+
+        playerStatus.MaxHealth = originMaxHP;
+        playerStatus.CurrentHealth = originCurrentHP;
+        playerStatus.healQuantity = originHeal;
+
         Destroy(bossPhase2);
     }
 
