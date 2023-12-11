@@ -13,7 +13,6 @@ public class EnemyBehaviorShield : MonoBehaviour
     [HideInInspector] public bool inRange;
     public GameObject hotZone;
     public GameObject triggerArea;
-    public Transform direction;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -50,19 +49,11 @@ public class EnemyBehaviorShield : MonoBehaviour
     {
         distance = Vector2.Distance(transform.position, target.position);
 
-        if(distance > attackDistance)
-        {
-            StopAttack();
-        }
-        else if(attackDistance >= distance && cooling == false)
-        {
-            Attack();
-        }
 
         if (cooling)
         {
             Cooldown();
-            anim.SetBool("Attack", false);
+            
         }
     }
 
@@ -75,15 +66,6 @@ public class EnemyBehaviorShield : MonoBehaviour
 
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
         }
-    }
-
-   void Attack()
-    {
-        timer = inTimer; 
-        attackMode = true;
-
-        anim.SetBool("Walk", false);
-        anim.SetBool("Attack", true);
     }
 
 
