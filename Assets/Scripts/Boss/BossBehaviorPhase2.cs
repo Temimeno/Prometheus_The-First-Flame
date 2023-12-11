@@ -17,6 +17,9 @@ public class BossBehaviorPhase2 : MonoBehaviour
     public GameObject SpawnBeamHorizontal02;
     
     public GameObject SpawnBeamHorizontalPhase02;
+    public GameObject SpawnBeamHorizontalPhase02_01;
+    public GameObject SpawnBeamHorizontalPhase02_02;
+    
 
     public GameObject SpawnBeamVertical01;
     public GameObject SpawnBeamVertical02;
@@ -132,7 +135,8 @@ public class BossBehaviorPhase2 : MonoBehaviour
         cooling = true;
         AttackBoss = 1;
 
-        Instantiate(BeamHorizontal, SpawnBeamHorizontalPhase02.transform.position, Quaternion.identity);
+        Instantiate(BeamHorizontal, SpawnBeamHorizontalPhase02_01.transform.position, Quaternion.identity);
+        Instantiate(BeamHorizontal, SpawnBeamHorizontalPhase02_02.transform.position, Quaternion.identity);
 
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase02.transform.position, Quaternion.identity);
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase04.transform.position, Quaternion.identity);

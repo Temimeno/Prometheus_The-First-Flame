@@ -417,6 +417,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 486169233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &44541213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44541214}
+  m_Layer: 0
+  m_Name: SpawnBeamHorizontal02Phase2
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &44541214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44541213}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.871597, y: 3.97, z: -0.2796588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 156828825}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &103464236
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +602,8 @@ Transform:
   - {fileID: 1386709927}
   - {fileID: 1033594426}
   - {fileID: 1504842005}
+  - {fileID: 44541214}
+  - {fileID: 981469697}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &159533907
@@ -2083,6 +2116,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6872840652014321862, guid: ab174bd79a87ccb46a736c09562705f2, type: 3}
   m_PrefabInstance: {fileID: 1543400861}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &981469696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981469697}
+  m_Layer: 0
+  m_Name: SpawnBeamHorizontal03Phase2
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &981469697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981469696}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.871597, y: -6.8, z: -0.2796588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 156828825}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1012719904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8047635116299261137, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
@@ -3098,7 +3162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504842005}
   m_Layer: 0
-  m_Name: SpawnBeamHorizontal02Phase2
+  m_Name: SpawnBeamHorizontal01Phase2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3134,7 +3198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1508906903
 Transform:
   m_ObjectHideFlags: 0
@@ -3528,6 +3592,8 @@ MonoBehaviour:
   SpawnBeamHorizontal01: {fileID: 1386709926}
   SpawnBeamHorizontal02: {fileID: 1033594425}
   SpawnBeamHorizontalPhase02: {fileID: 1504842004}
+  SpawnBeamHorizontalPhase02_01: {fileID: 44541213}
+  SpawnBeamHorizontalPhase02_02: {fileID: 981469696}
   SpawnBeamVertical01: {fileID: 764613550}
   SpawnBeamVertical02: {fileID: 1290608969}
   SpawnBeamVertical03: {fileID: 1129660322}
