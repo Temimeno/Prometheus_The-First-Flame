@@ -14,6 +14,7 @@ public class BossHealthPhase2 : MonoBehaviour
     public Animator anim;
     public Image bossHpBar;
 
+
     void Awake()
     {
         Hp = 1250;
@@ -27,6 +28,7 @@ public class BossHealthPhase2 : MonoBehaviour
 
         if(Hp <= 0)
         {
+            
             anim.SetTrigger("Death");
             StartCoroutine(BossDeath());
         }

@@ -25,7 +25,7 @@ public class BossHealth : MonoBehaviour
 
     void Update()
     {
-        if(Hp <= 1500 && ChangeBoss == false)
+        if(Hp <= 1250 && ChangeBoss == false)
         {   
             anim.SetTrigger("Phase2");
             StartCoroutine(ChangeBossPhase());
@@ -56,7 +56,7 @@ public class BossHealth : MonoBehaviour
 
     IEnumerator ChangeBossPhase()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(2f);
         bossPhase2.SetActive(true);
         bossPhase1.SetActive(false);
 

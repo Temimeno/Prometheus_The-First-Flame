@@ -16,6 +16,7 @@ public class BossBehaviorPhase2 : MonoBehaviour
     public GameObject SpawnBeamHorizontal01;
     public GameObject SpawnBeamHorizontal02;
     
+    public GameObject SpawnBeamHorizontalPhase02;
 
     public GameObject SpawnBeamVertical01;
     public GameObject SpawnBeamVertical02;
@@ -28,6 +29,8 @@ public class BossBehaviorPhase2 : MonoBehaviour
     public GameObject SpawnBeamVerticalPhase04;
     public GameObject SpawnBeamVerticalPhase05;
     public GameObject SpawnBeamVerticalPhase06;
+    public GameObject SpawnBeamVerticalPhase07;
+    public GameObject SpawnBeamVerticalPhase08;
 
     
     private float inTimer;
@@ -113,22 +116,28 @@ public class BossBehaviorPhase2 : MonoBehaviour
         cooling = true;
         AttackBoss = 4;
 
+        Instantiate(BeamHorizontal, SpawnBeamHorizontalPhase02.transform.position, Quaternion.identity);
+
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase01.transform.position, Quaternion.identity);
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase03.transform.position, Quaternion.identity);
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase05.transform.position, Quaternion.identity);
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase07.transform.position, Quaternion.identity);
 
         anim.SetTrigger("Attack02");
     }
 
     void Attack02_Right()
     {
-        timer += inTimer;
+        timer = inTimer;
         cooling = true;
         AttackBoss = 1;
+
+        Instantiate(BeamHorizontal, SpawnBeamHorizontalPhase02.transform.position, Quaternion.identity);
 
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase02.transform.position, Quaternion.identity);
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase04.transform.position, Quaternion.identity);
         Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase06.transform.position, Quaternion.identity);
+        Instantiate(BeamVerticalPhase2, SpawnBeamVerticalPhase08.transform.position, Quaternion.identity);
 
         anim.SetTrigger("Attack02_Right");
     }
