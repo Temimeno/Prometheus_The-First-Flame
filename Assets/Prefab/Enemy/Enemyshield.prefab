@@ -322,7 +322,7 @@ MonoBehaviour:
   Hp: 0
   MaxHp: 100
   damageColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 8580564205487254287}
   playerHealth: {fileID: 0}
   playerSouls: {fileID: 0}
   enemySouls: {fileID: 0}
