@@ -9,6 +9,7 @@ public class Checkpoint : MonoBehaviour
     private GameMaster gm;
     public SceneInfo sceneInfo;
     private Animator anim;
+    public bool fire = false;
 
     void Start()
     {
@@ -22,7 +23,12 @@ public class Checkpoint : MonoBehaviour
         {
             gm.lastCheckpointPos = transform.position;
             gm.checkPointAtScene = SceneManager.GetActiveScene().buildIndex;
-            anim.SetTrigger("OpenFire");
+            
+            if(fire == false)
+            {
+                anim.SetTrigger("OpenFire");
+                StartCoroutine(ChangeFire());
+            }
 
             sceneInfo.playerSpawnPosition = gm.lastCheckpointPos;
             sceneInfo.spawningScene = gm.checkPointAtScene;
@@ -31,7 +37,8 @@ public class Checkpoint : MonoBehaviour
 
     IEnumerator ChangeFire()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         anim.SetBool("Fire", true);
+        fire = true;
     }
 }
