@@ -11,14 +11,14 @@ public class BossHealthPhase2 : MonoBehaviour
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
     public GameObject bossPhase2;
-    private Animator anim;
+    public Animator anim;
     public Image bossHpBar;
-    void Start()
+
+    void Awake()
     {
         Hp = 1500;
         anim = GetComponent<Animator>();
     }
-    
     public void TakeDamage(float damage)
     {
         Hp -= damage;
@@ -27,7 +27,8 @@ public class BossHealthPhase2 : MonoBehaviour
 
         if(Hp <= 0)
         {
-            Destroy(bossPhase2);
+            anim.SetTrigger("Death");
+            StartCoroutine(BossDeath());
         }
     }
 
@@ -37,6 +38,12 @@ public class BossHealthPhase2 : MonoBehaviour
         spriteRenderer.color = damageColor;
         yield return new WaitForSeconds(0.2f);
         spriteRenderer.color = originalColor;
+    }
+
+    IEnumerator BossDeath()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Destroy(bossPhase2);
     }
 
 }
