@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 6479148694545507140}
   - component: {fileID: 7645631468557967979}
   - component: {fileID: 2445346957452819590}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: triggerArea
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 5512704865264031022}
   - component: {fileID: 8211169631549574259}
   - component: {fileID: 268861377520924814}
+  - component: {fileID: 4998278018280525487}
   m_Layer: 7
   m_Name: Enemy_CanWalk
   m_TagString: Untagged
@@ -375,8 +376,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 1
-  m_Mass: 1.9558063
+  m_UseAutoMass: 0
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -433,6 +434,51 @@ MonoBehaviour:
   inRange: 0
   hotZone: {fileID: 2885513374983936427}
   triggerArea: {fileID: 5316571243284065921}
+--- !u!61 &4998278018280525487
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6032507140954470147}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03923464, y: -1.2985806}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.857143, y: 2.857143}
+    newSize: {x: 2.857143, y: 2.857143}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15930843, y: 0.070510864}
+  m_EdgeRadius: 0
 --- !u!1 &7268131846958417060
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +542,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.061476946, y: 0.4124074}
@@ -541,7 +587,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.09, y: -0.87}
@@ -559,11 +605,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57d384f205c9774bb7ca6d2b667d23d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 6032507140954470147}
   Hp: 0
   MaxHp: 100
   damageColor: {r: 1, g: 0, b: 0, a: 1}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 3531843629348989213}
+  playerHealth: {fileID: 0}
 --- !u!1 &8894154145889924664
 GameObject:
   m_ObjectHideFlags: 0

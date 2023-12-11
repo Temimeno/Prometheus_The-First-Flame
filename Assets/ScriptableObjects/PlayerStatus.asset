@@ -15,3 +15,6 @@ MonoBehaviour:
   MaxHealth: 40
   CurrentHealth: 40
   attackDamage: 15
+  dashingCooldown: 0
+  healAmount: 30
+  healQuantity: 3

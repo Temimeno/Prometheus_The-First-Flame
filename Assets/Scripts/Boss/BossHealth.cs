@@ -8,6 +8,7 @@ public class BossHealth : MonoBehaviour
     public float Hp;
     public float MaxHp = 3000f;
     
+    [SerializeField] GameObject bossPrefab;
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
     public GameObject bossPhase1;
