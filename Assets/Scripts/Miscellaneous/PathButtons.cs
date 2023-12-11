@@ -7,6 +7,7 @@ public class PathButtons : MonoBehaviour
 {
     public Stats stats;
     public Status status;
+    public Souls playerSouls;
     public SceneInfo sceneInfo;
     public SceneInfo clearOldScene;
     public VectorValue vectorValue;
@@ -64,5 +65,7 @@ public class PathButtons : MonoBehaviour
         status.dashingCooldown = 0.8f - stats.Agility/30f;
 
         status.healQuantity = 3;
+
+        playerSouls.soul = 0;
     }
 }

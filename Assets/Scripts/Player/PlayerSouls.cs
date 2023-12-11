@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerStats : MonoBehaviour
+public class PlayerSouls : MonoBehaviour
 {
-    public Stats stats;
     public Souls playerSouls;
-    public Status status;
+    public Text soulsAmount;
 
     void Start()
     {
         
     }
 
-
     void Update()
     {
-        
+        soulsAmount.text = "" + playerSouls.soul;
     }
 }

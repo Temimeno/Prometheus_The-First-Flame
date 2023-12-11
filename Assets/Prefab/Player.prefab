@@ -45,8 +45,9 @@ GameObject:
   - component: {fileID: 5813590553261130811}
   - component: {fileID: 5222351033387551320}
   - component: {fileID: 6761433894729315408}
-  - component: {fileID: 4573822106144280581}
+  - component: {fileID: 1917742691450883606}
   - component: {fileID: 1382091690796023175}
+  - component: {fileID: 4573822106144280581}
   - component: {fileID: 1742403230351275808}
   - component: {fileID: 6111023439313078996}
   m_Layer: 6
@@ -248,9 +249,10 @@ MonoBehaviour:
   playerMovement: {fileID: 5222351033387551320}
   attackPoint: {fileID: 7417137736265131389}
   attackRange: 0.6
-  attackTriggerDelay: 0.2
   attackRate: 2.5
---- !u!114 &4573822106144280581
+  nextAttackTime: 0
+  attackTriggerDelay: 0.2
+--- !u!114 &1917742691450883606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,12 +261,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4488036989424134371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bf99a1253709424893e2ad6baddc097, type: 3}
+  m_Script: {fileID: 11500000, guid: e8c0c5f5123f8834b938abae46ffae9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCollider:
-  - {fileID: 5813590553261130811}
-  - {fileID: 5766895401018250792}
+  playerSouls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
+  soulsAmount: {fileID: 0}
 --- !u!114 &1382091690796023175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,6 +283,21 @@ MonoBehaviour:
   potion1: {fileID: 0}
   potion2: {fileID: 0}
   potion3: {fileID: 0}
+--- !u!114 &4573822106144280581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4488036989424134371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf99a1253709424893e2ad6baddc097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider:
+  - {fileID: 5813590553261130811}
+  - {fileID: 5766895401018250792}
 --- !u!95 &1742403230351275808
 Animator:
   serializedVersion: 5

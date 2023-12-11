@@ -2328,6 +2328,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8047635116299261137, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
   m_PrefabInstance: {fileID: 9021663538213366105}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &915724908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8044046200246092339, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
+  m_PrefabInstance: {fileID: 9021663538213366105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &916597314
 GameObject:
   m_ObjectHideFlags: 0
@@ -7049,6 +7060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -90703464464685527, guid: fc9d0eb98de4f3c418b16a27b7d439a5, type: 3}
+      propertyPath: soulsAmount
+      value: 
+      objectReference: {fileID: 654390361131150647, guid: cf299115218285f45bfbf874093e4bed, type: 3}
     - target: {fileID: 2691893886834142473, guid: fc9d0eb98de4f3c418b16a27b7d439a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.522681
@@ -7511,6 +7526,10 @@ PrefabInstance:
       propertyPath: potion3
       value: 
       objectReference: {fileID: 1468038218}
+    - target: {fileID: 1917742691450883606, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: soulsAmount
+      value: 
+      objectReference: {fileID: 915724908}
     - target: {fileID: 4488036989424134371, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7876,10 +7895,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4432410731897973273, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
-      propertyPath: status
-      value: 
-      objectReference: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
     - target: {fileID: 8380705006210253245, guid: e3471518a8df85e41be14f9187b9dd21, type: 3}
       propertyPath: m_Name
       value: Canvas

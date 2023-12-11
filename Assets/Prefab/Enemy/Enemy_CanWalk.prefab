@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5623908658660298410}
   - component: {fileID: 2946012613377352856}
   - component: {fileID: 4954086608528013252}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: WeaponHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 8211169631549574259}
   - component: {fileID: 268861377520924814}
   - component: {fileID: 4998278018280525487}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Enemy_CanWalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,10 +607,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 6032507140954470147}
   Hp: 0
-  MaxHp: 100
+  MaxHp: 40
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   spriteRenderer: {fileID: 3531843629348989213}
   playerHealth: {fileID: 0}
+  playerSouls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
+  enemySouls: {fileID: 11400000, guid: 47723aa0374f4c34388b9cf1dce47e10, type: 2}
 --- !u!1 &8894154145889924664
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3754052484715220810}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Raycast
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}

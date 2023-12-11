@@ -748,6 +748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 5d5cafa29df800649825710a8b15be3b, type: 2}
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  playerSouls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
   sceneInfo: {fileID: 11400000, guid: 4a7a38630ea379a4abfc23782719ea23, type: 2}
   clearOldScene: {fileID: 11400000, guid: 1d4f8bee27168f644a8cd2e638463cb3, type: 2}
   vectorValue: {fileID: 11400000, guid: 25e96baefd750724393a736d00ad1e12, type: 2}
@@ -1045,6 +1046,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -90703464464685527, guid: fc9d0eb98de4f3c418b16a27b7d439a5, type: 3}
+      propertyPath: soulsAmount
+      value: 
+      objectReference: {fileID: 654390361131150647, guid: cf299115218285f45bfbf874093e4bed, type: 3}
     - target: {fileID: 2691893886834142473, guid: fc9d0eb98de4f3c418b16a27b7d439a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.522681

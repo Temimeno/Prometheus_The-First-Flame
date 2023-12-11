@@ -60,5 +60,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 11400000, guid: 5d5cafa29df800649825710a8b15be3b, type: 2}
-  souls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
+  playerSouls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
   status: {fileID: 11400000, guid: 54daba396c76d4d47bf6815896dcbec0, type: 2}
+  soulsAmount: {fileID: 0}

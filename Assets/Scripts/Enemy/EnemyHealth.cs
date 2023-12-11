@@ -11,6 +11,8 @@ public class EnemyHealth : MonoBehaviour
     public Color damageColor = Color.red;
     public SpriteRenderer spriteRenderer;
     public PlayerHealth playerHealth;
+    public Souls playerSouls;
+    public Souls enemySouls;
 
     void Start()
     {
@@ -23,6 +25,7 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine(ChangneColorDamage());
         if(Hp <= 0)
         {
+            playerSouls.soul += enemySouls.soul;
             Destroy(enemyPrefab);
         }
     }

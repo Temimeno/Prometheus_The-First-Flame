@@ -262,3 +262,5 @@ MonoBehaviour:
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   spriteRenderer: {fileID: 9011204980451785036}
   playerHealth: {fileID: 0}
+  playerSouls: {fileID: 11400000, guid: d4d8fa16004b980498da5a75fa09fde7, type: 2}
+  enemySouls: {fileID: 11400000, guid: fdfdbb697f1ace446af06088b1250ae0, type: 2}
