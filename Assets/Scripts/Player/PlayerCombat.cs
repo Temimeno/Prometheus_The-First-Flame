@@ -15,7 +15,9 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public float attackTriggerDelay = 0.2f;
     public float attackRate = 2f;
+    public AudioSource AttackSound;
     float nextAttackTime = 0f;
+
     void Update()
     {
         if (Time.time >= nextAttackTime && playerMovement.isGrounded == true && playerMovement.isDashing == false)
@@ -23,6 +25,7 @@ public class PlayerCombat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.J))
             {
                 animator.SetTrigger("Attack");
+                AttackSound.Play();
                 Invoke("Attack", attackTriggerDelay);
                 nextAttackTime = Time.time + 1f / attackRate;
             }

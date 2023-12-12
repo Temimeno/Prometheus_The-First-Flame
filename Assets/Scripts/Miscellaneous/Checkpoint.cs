@@ -11,6 +11,8 @@ public class Checkpoint : MonoBehaviour
     private Animator anim;
     public bool fire = false;
 
+    public AudioSource audioClip;
+
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -39,6 +41,7 @@ public class Checkpoint : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         anim.SetBool("Fire", true);
+        audioClip.Play();
         fire = true;
     }
 }

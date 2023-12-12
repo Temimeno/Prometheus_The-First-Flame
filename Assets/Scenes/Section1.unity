@@ -11083,6 +11083,10 @@ PrefabInstance:
       propertyPath: soulsAmount
       value: 
       objectReference: {fileID: 9021663538213366106}
+    - target: {fileID: 3699956302518213018, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4488036989424134371, guid: 77a9acedb1ae0924599b7c66f410607d, type: 3}
       propertyPath: m_Name
       value: Player

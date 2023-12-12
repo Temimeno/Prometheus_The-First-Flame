@@ -15,6 +15,7 @@ public class Boss : MonoBehaviour
     public GameObject LoopMusic;
 
 
+
     void Start()
     {
         boss.SetActive(false);
@@ -39,7 +40,6 @@ public class Boss : MonoBehaviour
             anim.SetTrigger("OpenBoss");
         }
     }
+
     
-
-
 }

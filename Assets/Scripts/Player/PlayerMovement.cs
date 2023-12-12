@@ -36,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer trailRenderer;
 
+    //sound
+    public AudioSource audioClip;
+
     private void Start()
     {
         _fallSpeedYDampingChangeThreshold = CameraManager.instance._fallSpeedYDampingChangeThreshold;
@@ -64,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             animator.SetTrigger("Jump");
+            audioClip.Play(); 
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -138,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        audioClip.Play();
         trailRenderer.emitting = true;
 
         // Stop Dashing

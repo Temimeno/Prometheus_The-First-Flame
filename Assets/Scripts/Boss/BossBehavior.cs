@@ -20,7 +20,9 @@ public class BossBehavior : MonoBehaviour
     public GameObject SpawnBeamVertical03;
     public GameObject SpawnBeamVertical04;
 
-    
+    public AudioSource audioClipSmash;
+    public AudioSource audioClipBeam;
+
     
     private float inTimer;
     
@@ -75,6 +77,8 @@ public class BossBehavior : MonoBehaviour
         Instantiate(BeamVertical, SpawnBeamVertical04.transform.position, Quaternion.identity);
         
         anim.SetTrigger("Attack01");
+        StartCoroutine(Song());
+        StartCoroutine(SongBeam());
     }
 
     void Attack01_Right()
@@ -87,6 +91,8 @@ public class BossBehavior : MonoBehaviour
         Instantiate(BeamHorizontal, SpawnBeamHorizontal02.transform.position, Quaternion.identity);
         
         anim.SetTrigger("Attack01_Right");
+        StartCoroutine(Song());
+        StartCoroutine(SongBeam());
     }
 
     void Cooldown()
@@ -99,6 +105,22 @@ public class BossBehavior : MonoBehaviour
             timer = inTimer;
         }
 
+    }
+
+    IEnumerator Song()
+    {
+        yield return new WaitForSeconds(1f);
+        audioClipSmash.Play();
+        
+    }
+
+    IEnumerator SongBeam()
+    {
+        yield return new WaitForSeconds(1f);
+        audioClipBeam.Play();
+        yield return new WaitForSeconds(1.75f);
+        audioClipBeam.Stop();
+        
     }
 
     
