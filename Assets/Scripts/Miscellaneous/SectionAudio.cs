@@ -36,7 +36,7 @@ public class SectionAudio : MonoBehaviour
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         Debug.Log(currentScene);
 
-        if (currentScene > 5)
+        if (currentScene < 1 || currentScene > 5)
         {
             Destroy(gameObject);
         }

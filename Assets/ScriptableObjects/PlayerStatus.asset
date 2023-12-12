@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e3cec233752d64480b36f60229bd5b, type: 3}
   m_Name: PlayerStatus
   m_EditorClassIdentifier: 
-  MaxHealth: 60
-  CurrentHealth: 50
-  attackDamage: 8
-  dashingCooldown: 0.3
+  MaxHealth: 100
+  CurrentHealth: 100
+  attackDamage: 10
+  dashingCooldown: 0.8
   healAmount: 30
-  healQuantity: 2
+  healQuantity: 3
