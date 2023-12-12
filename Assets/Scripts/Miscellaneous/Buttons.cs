@@ -8,6 +8,9 @@ public class Buttons : MonoBehaviour
     public SceneInfo sceneInfo;
     public VectorValue vectorValue;
     public PathNumber pathNumber;
+    public Status playerStatus;
+    public Souls playerSouls;
+
     public void ToPathSelection()
     {
         SceneManager.LoadScene(1);
@@ -15,6 +18,10 @@ public class Buttons : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        playerStatus.CurrentHealth = playerStatus.MaxHealth;
+        playerStatus.healQuantity = 3;
+        playerSouls.soul /= 2;
+
         SceneManager.LoadScene(0);
     }
 
