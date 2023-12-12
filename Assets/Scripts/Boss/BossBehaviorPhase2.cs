@@ -37,8 +37,6 @@ public class BossBehaviorPhase2 : MonoBehaviour
 
     public AudioSource audioClipSmash;
     public AudioSource audioClipBeam;
-    public AudioSource audioSweep;
-
     
     private float inTimer;
     

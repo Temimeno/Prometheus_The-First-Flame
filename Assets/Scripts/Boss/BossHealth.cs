@@ -25,7 +25,7 @@ public class BossHealth : MonoBehaviour
 
     void Update()
     {
-        if(Hp <= 1000 && ChangeBoss == false)
+        if(Hp <= 750 && ChangeBoss == false)
         {   
             anim.SetTrigger("Phase2");
             StartCoroutine(ChangeBossPhase());

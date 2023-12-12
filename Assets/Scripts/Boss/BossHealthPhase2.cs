@@ -28,7 +28,7 @@ public class BossHealthPhase2 : MonoBehaviour
 
     void Awake()
     {
-        Hp = 1000;
+        Hp = 750;
         anim = GetComponent<Animator>();
     }
     public void TakeDamage(float damage)
