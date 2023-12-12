@@ -12,6 +12,7 @@ public class Boss : MonoBehaviour
     public Animator anim;
     public GameObject RoomBlock;
     public GameObject Platform;
+    public GameObject LoopMusic;
 
 
     void Start()
@@ -34,6 +35,7 @@ public class Boss : MonoBehaviour
             bossHealthBar.SetActive(true);
             RoomBlock.SetActive(true);
             Platform.SetActive(true);
+            LoopMusic.SetActive(true);
             anim.SetTrigger("OpenBoss");
         }
     }
