@@ -13,6 +13,9 @@ public class PathButtons : MonoBehaviour
     public VectorValue vectorValue;
     public VectorValue clearOldPosition;
     public PathNumber pathNumber;
+    public AudioSource audioClip1;
+    public AudioSource audioClip2;
+    public AudioSource audioClip3;
 
     public void StandardPath()
     {
@@ -24,8 +27,9 @@ public class PathButtons : MonoBehaviour
 
         pathNumber.path = false;
 
-        SetStatus();
-        ChangeScene();
+        audioClip1.Play();
+        StartCoroutine(PlaySong());
+
     }
 
     public void SwiftPath()
@@ -38,8 +42,8 @@ public class PathButtons : MonoBehaviour
         
         pathNumber.path = false;
         
-        SetStatus();
-        ChangeScene();
+        audioClip2.Play();
+        StartCoroutine(PlaySong());
     }
 
     public void HyperPath()
@@ -51,9 +55,10 @@ public class PathButtons : MonoBehaviour
         stats.Luck = 5;
         
         pathNumber.path = false;
+
+        audioClip3.Play();
+        StartCoroutine(PlaySong());
         
-        SetStatus();
-        ChangeScene();
     }
 
     private void ChangeScene()
@@ -77,5 +82,12 @@ public class PathButtons : MonoBehaviour
         status.healQuantity = 3;
 
         playerSouls.soul = 0;
+    }
+
+    IEnumerator PlaySong()
+    {
+        yield return new WaitForSeconds(1f);
+        SetStatus();
+        ChangeScene();
     }
 }
